@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "NHaasGrotesk";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../font/NHaasGroteskTXStd-76BdIt.woff2") format("woff2"), url("../font/NHaasGroteskTXStd-76BdIt.woff") format("woff");
+}
+
+@font-face {
+  font-family: "NHaasGrotesk";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/NHaasGroteskTXStd-75Bd.woff2") format("woff2"), url("../font/NHaasGroteskTXStd-75Bd.woff") format("woff");
+}
+
+@font-face {
+  font-family: "NHaasGrotesk";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../font/NHaasGroteskTXStd-66MdIt.woff2") format("woff2"), url("font/NHaasGroteskTXStd-66MdIt.woff") format("woff");
+}
+
+@font-face {
+  font-family: "NHaasGrotesk";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/NHaasGroteskTXStd-65Md.woff2") format("woff2"), url("../font/NHaasGroteskTXStd-65Md.woff") format("woff");
+}
+
+@font-face {
+  font-family: "NHaasGrotesk";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../font/NHaasGroteskTXStd-56It.woff2") format("woff2"), url("../font/NHaasGroteskTXStd-56It.woff") format("woff");
+}
+
+@font-face {
+  font-family: "NHaasGrotesk";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/NHaasGroteskTXStd-55Rg.woff2") format("woff2"), url("../font/NHaasGroteskTXStd-55Rg.woff") format("woff");
+}

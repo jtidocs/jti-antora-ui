@@ -1,2 +1,3 @@
 # jti-antora-ui
-An Antora UI customized for JTI documentation.
+
+See [README.adoc](./README.adoc) for details.

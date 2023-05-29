@@ -1,0 +1,89 @@
+footer.footer {
+  background-color: var(--footer-background);
+  color: var(--footer-font-color);
+  font-size: calc(13 / var(--rem-base) * 1rem);
+  font-family: var(--footer-font-family);
+  line-height: var(--footer-line-height);
+  padding: 2.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.footer .logo {
+  flex-grow: 0;
+  flex-basis: 200px;
+}
+
+.footer .logo a {
+  display: block;
+  margin: 0 40px;
+}
+
+.footer .logo svg {
+  width: 120px;
+  height: auto;
+  fill: var(--footer-font-color);
+}
+
+.footer .logo svg .j {
+  transition: fill 0.5s ease;
+}
+
+.footer .logo a:hover svg .aqua {
+  fill: var(--color-jti-aqua);
+}
+
+.footer .logo a:hover svg .carbon {
+  fill: var(--color-jti-glacier);
+}
+
+.footer .logo a:hover svg .jade {
+  fill: var(--color-jti-jade);
+}
+
+.footer .logo a:hover svg .plum {
+  fill: var(--color-jti-plum);
+}
+
+.footer .logo a:hover svg .royal {
+  fill: var(--color-jti-royal);
+}
+
+.footer .logo a:hover svg .ruby {
+  fill: var(--color-jti-ruby);
+}
+
+.footer .logo a:hover svg .triumph {
+  fill: var(--color-jti-triumph);
+}
+
+body.darkMode .footer .logo a:hover svg .carbon { fill: var(--color-black); }
+
+.footer .links {
+  flex-grow: 1;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+}
+
+.footer a {
+  color: var(--footer-font-color);
+}
+
+.footer .socmed a {
+  text-decoration: none;
+}
+
+.footer .socmed svg {
+  fill: var(--color-jti-glacier);
+}
+
+.footer .socmed a.linkedin:hover svg {
+  fill: #2766c2;
+}
+
+.footer .socmed a.twitter:hover svg {
+  fill: #349bf0;
+}

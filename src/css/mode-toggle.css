@@ -1,0 +1,132 @@
+#mode-toggle {
+  --ease-3: cubic-bezier(0.25, 0, 0.3, 1);
+  --ease-out-5: cubic-bezier(0, 0, 0, 1);
+  --ease-elastic-3: cubic-bezier(0.5, 1.25, 0.75, 1.25);
+  --ease-elastic-4: cubic-bezier(0.5, 1.5, 0.75, 1.25);
+  --size: 2rem;
+  --icon-fill: var(--color-jti-glacier);
+  --icon-fill-hover: var(--color-white);
+
+  -webkit-tap-highlight-color: transparent;
+  background: transparent;
+  border: 0 none;
+  /* aspect-ratio: 1; */
+  block-size: var(--size);
+  border-radius: 50%;
+  cursor: pointer;
+  inline-size: var(--size);
+  outline-offset: 5px;
+  padding: 0;
+  touch-action: manipulation;
+}
+
+#mode-toggle > svg {
+  stroke-linecap: round;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+body.darkMode #mode-toggle {
+  --icon-fill: #abb3ba;
+  --icon-fill-hover: #e2e6e9;
+}
+
+@media (hover: none) {
+  #mode-toggle {
+    --size: 48px;
+  }
+}
+
+.sun-and-moon > .moon,
+.sun-and-moon > .sun,
+.sun-and-moon > .sun-beams {
+  transform-origin: center center;
+}
+
+.sun-and-moon > .moon,
+.sun-and-moon > .sun {
+  fill: var(--icon-fill);
+}
+
+#mode-toggle:hover > .sun-and-moon > .moon,
+#mode-toggle:hover > .sun-and-moon > .sun {
+  fill: var(--icon-fill-hover);
+}
+
+#mode-toggle:focus-visible > .sun-and-moon > .moon {
+  fill: var(--icon-fill-hover);
+}
+
+#mode-toggle:focus-visible > .sun-and-moon > .sun {
+  fill: var(--icon-fill-hover);
+}
+
+.sun-and-moon > .sun-beams {
+  stroke: var(--icon-fill);
+  stroke-width: 2px;
+}
+
+#mode-toggle:hover .sun-and-moon > .sun-beams {
+  stroke: var(--icon-fill-hover);
+}
+
+#mode-toggle:focus-visible .sun-and-moon > .sun-beams {
+  stroke: var(--icon-fill-hover);
+}
+
+body.darkMode .sun-and-moon > .sun {
+  transform: scale(1.75);
+}
+
+body.darkMode .sun-and-moon > .sun-beams {
+  opacity: 0;
+}
+
+body.darkMode .sun-and-moon > .moon > circle {
+  transform: translate(-7px);
+}
+
+@supports (cx: 1) {
+  body.darkMode .sun-and-moon > .moon > circle {
+    cx: 17;
+    transform: translate(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sun-and-moon > .sun {
+    transition: transform 0.5s var(--ease-elastic-3);
+  }
+
+  .sun-and-moon > .sun-beams {
+    transition:
+      transform 0.5s var(--ease-elastic-4),
+      opacity 0.5s var(--ease-3);
+  }
+
+  .sun-and-moon .moon > circle {
+    transition: transform 0.25s var(--ease-out-5);
+  }
+
+  @supports (cx: 1) {
+    .sun-and-moon .moon > circle {
+      transition: cx 0.25s var(--ease-out-5);
+    }
+  }
+
+  body.darkMode .sun-and-moon > .sun {
+    transform: scale(1.75);
+    transition-duration: 0.25s;
+    transition-timing-function: var(--ease-3);
+  }
+
+  body.darkMode .sun-and-moon > .sun-beams {
+    transform: rotate(-25deg);
+    transition-duration: 0.15s;
+  }
+
+  body.darkMode .sun-and-moon > .moon > circle {
+    transition-delay: 0.25s;
+    transition-duration: 0.5s;
+  }
+}

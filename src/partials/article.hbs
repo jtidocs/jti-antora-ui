@@ -1,0 +1,25 @@
+<article class="doc"
+  data-pagefind-filter="component[data-antora_component],version[data-antora_version]"
+  data-antora_component="{{{ page.component.name }}}"
+  data-antora_component-name="{{{ page.component.title }}}"
+  data-antora_version="{{{ page.version }}}"
+  data-antora_siteroot="{{{ siteRootPath }}}"
+  data-breadcrumb="
+{{~#with page.componentVersion}}
+{{~#if (and ./title (ne ./title @root.page.breadcrumbs.0.content))}}
+{{{./title}}}
+{{~/if}}
+{{~/with}}
+{{~#each page.breadcrumbs}}
+ > {{{./content}}}
+{{~/each~}}
+"
+  data-image=""
+  data-pagefind-meta="image[data-image],image_alt[data-image],breadcrumb[data-breadcrumb]"
+>
+{{#with page.title}}
+<h1 class="page">{{{this}}}</h1>
+{{/with}}
+{{{page.contents}}}
+{{> pagination}}
+</article>

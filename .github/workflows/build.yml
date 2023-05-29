@@ -1,0 +1,33 @@
+name: Build JTI Antora UI
+on: push
+permissions:
+  contents: write
+jobs:
+  build-ui:
+    name: Build UI
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout UI
+      uses: actions/checkout@v3
+    - name: Setup ENV
+      run: |
+        echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+        echo "RELEASE_SHA=${{ github.sha }}" >> $GITHUB_ENV
+        echo "REPO_NAME=${GITHUB_REPOSITORY}" >> $GITHUB_ENV
+        echo "REPO_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}" >> $GITHUB_ENV
+    - name: Install dependencies
+      run: npm install
+    - name: Build UI
+      run: npx gulp bundle
+    - name: Make latest bundle
+      run: mv build/ui-bundle.zip build/jti-ui.zip
+    - name: Check bundles
+      run: ls -l build/
+    - name: Create release
+      uses: ncipollo/release-action@v1.12.0
+      with:
+        artifacts: "build/jti-ui.zip"
+        allowUpdates: true
+        generateReleaseNotes: true
+        tag: latest
+        token: ${{ secrets.GITHUB_TOKEN }}
