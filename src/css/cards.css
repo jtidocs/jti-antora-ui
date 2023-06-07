@@ -1,0 +1,72 @@
+.cards {
+  background-color: var(--sidebar-background);
+  border-radius: var(--border-radius-large);
+}
+
+.doc .cards > .content {
+  padding: 0 1rem 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: stretch;
+  column-gap: 1rem;
+}
+
+.doc .sidebarblock.card {
+  display: flex;
+  background-color: var(--color-white);
+  width: 33%;
+  flex-grow: 1;
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.15s ease;
+}
+
+.doc .sidebarblock.card > .content {
+  position: relative;
+}
+
+.doc .sidebarblock.card.hasIcon > .content {
+  padding-left: 4rem;
+}
+
+.doc .sidebarblock.card .imageblock.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3rem;
+}
+
+.doc .sidebarblock.card .imageblock.icon > .content {
+  margin: 0 auto;
+}
+
+.doc .sidebarblock.card .imageblock.icon img {
+  height: 3rem;
+  display: inline-block;
+}
+
+.doc .sidebarblock.card.wide {
+  width: 100%;
+}
+
+.doc .sidebarblock.card:hover {
+  scale: 1.03;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.doc .sidebarblock.card > .content > .link {
+  display: none;
+}
+
+.doc .sidebarblock.card > .content > .link.show {
+  display: block;
+}
+
+@media screen and (max-width: 768px),
+  screen and (min-width: 1024px) and (max-width: 1120px) {
+  .doc .sidebarblock.card {
+    width: 100%;
+  }
+}
