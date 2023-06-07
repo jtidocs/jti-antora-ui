@@ -2,7 +2,7 @@
   var Mzm = (window.mzm = require('medium-zoom/dist/medium-zoom.min'))
   Mzm(
     // 'span.frame img, span.zoom img, div.imageblock img',
-    'div.imageblock img, span img, div.imageblock:not(.nozoom) img, span:not(.nozoom) img',
+    'div.imageblock:not(.nozoom) img, span:not(.nozoom) img',
     {
       background: '#fff',
     }
