@@ -30,18 +30,25 @@
   padding-left: 4rem;
 }
 
-.doc .sidebarblock.card .imageblock.icon {
+.doc .sidebarblock.card .imageblock.icon,
+.doc .sidebarblock.card .image.icon {
   position: absolute;
   top: 0;
   left: 0;
   width: 3rem;
 }
 
-.doc .sidebarblock.card .imageblock.icon > .content {
+.doc .sidebarblock.card .image.icon {
+  top: 0.5rem;
+}
+
+.doc .sidebarblock.card .imageblock.icon > .content,
+.doc .sidebarblock.card .image.icon > .content {
   margin: 0 auto;
 }
 
-.doc .sidebarblock.card .imageblock.icon img {
+.doc .sidebarblock.card .imageblock.icon img,
+.doc .sidebarblock.card .image.icon img {
   height: 3rem;
   display: inline-block;
 }

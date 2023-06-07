@@ -928,70 +928,40 @@ That's all, folks!
 [.card.wide]
 ****
 [discrete]
-== Introduction and background
+== image:icon-intro.svg[role="icon nozoom"] xref:introduction:index.adoc[Introduction]
 
 Learn about {product} background, typical installation details, and more.
-
-[.icon.nozoom]
-image::icon-intro.svg[]
-
-[.link]
-xref:introduction:index.adoc[].
 ****
 
 [.card]
 ****
-[discrete]
-== Install
+[discrete.link.show]
+== image:icon-install.svg[role="icon nozoom"] xref:install:index.adoc[Install]
 
 Learn how to install {product} components and dependencies.
-
-[.icon.nozoom]
-image::icon-install.svg[]
-
-[.link]
-xref:install:index.adoc[].
 ****
 
 [.card]
 ****
-[discrete]
-== Deploy
+[discrete.link.show]
+== image:icon-deploy.svg[role="icon nozoom"] xref:deploy:index.adoc[Deploy]
 
 Learn how to deploy {product} and configure.
-
-[.icon.nozoom]
-image::icon-deploy.svg[]
-
-[.link]
-xref:deploy:index.adoc[].
 ****
 
 [.card]
 ****
-[discrete]
-== Update
+[discrete.link.show]
+== image:icon-update.svg[role="icon nozoom"] xref:update:index.adoc[Update]
 
 Learn how to update an {product} deployment.
-
-[.icon.nozoom]
-image::icon-update.svg[]
-
-[.link]
-xref:update:index.adoc[].
 ****
 
 [.card]
 ****
-[discrete]
-== Support
+[discrete.link.show]
+== image:icon-support.svg[role="icon nozoom"] xref:support:index.adoc[Support]
 
 Learn how to troubleshoot and solve problems with {product} deployments.
-
-[.icon.nozoom]
-image::icon-support.svg[]
-
-[.link]
-xref:support:index.adoc[].
 ****
 --

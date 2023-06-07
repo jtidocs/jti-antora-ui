@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" width="25.6" height="35" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" width="35.109" height="48" version="1.1">
   <style id="style1" type="text/css">
     .st0{fill:#e56f25}.st1{fill:#f58634}.st2{fill:#53b1e2}.st3{fill:#fbb444}.st4{fill:#e7e3e6}.st6{fill:#4e4c4d}.st7{fill:#656766}.st10{fill:#22a7d4}
   </style>
-  <g id="g26" transform="translate(-12.3 -10.7)">
-    <g id="g1">
+  <g id="g26" transform="translate(-16.869 -14.674) scale(1.37143)">
+    <g id="g1" transform="translate(.114)">
       <path id="path1" d="M17.4 13.7h1.2v5.5c-.7 0-1.2-.6-1.2-1.2z" class="st0"/>
     </g>
     <g id="g2">
@@ -36,7 +36,7 @@
       <path id="path10" d="M32.1 22.4h-.7v-3.2h.7c.5 0 .8.4.8.8v1.6c0 .4-.4.8-.8.8z" class="st6"/>
     </g>
     <g id="g12">
-      <path id="path11" d="M17.9 22.4h.7v-3.2h-.7c-.5 0-.8.4-.8.8v1.6c0 .4.4.8.8.8z" class="st6"/>
+      <path id="path11" d="M18.004 22.4h.7v-3.2h-.7c-.5 0-.8.4-.8.8v1.6c0 .4.4.8.8.8z" class="st6"/>
     </g>
     <g id="g13">
       <path id="path12" d="M29.2 26.4h-2.5v-.7h2.5c1.2 0 2.1-.9 2.1-2.1v-1.9h.7v1.9c.1 1.5-1.2 2.8-2.8 2.8z" class="st6"/>
