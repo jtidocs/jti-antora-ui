@@ -304,7 +304,8 @@
   margin-top: -0.2em;
 }
 
-.doc .videoblock iframe {
+.doc .videoblock iframe,
+.doc .videoblock video {
   max-width: 100%;
   vertical-align: middle;
 }
