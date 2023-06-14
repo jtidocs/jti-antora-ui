@@ -14,7 +14,6 @@
 
   cardsBlocks.forEach((cards) => {
     cards.querySelectorAll('.card').forEach((card) => {
-      console.log('Card:', card)
       if (card.querySelector('.icon')) {
         card.classList.add('hasIcon')
       }
