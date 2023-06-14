@@ -2,30 +2,38 @@
   list-style: none;
 }
 
-.doc .ulist.issue li > p:first-child::before {
+.doc .ulist.issue li {
+  position: relative;
+}
+
+.doc .ulist.issue li::before {
   content: ' ';
-  display: inline-block;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -3ch;
   height: 2ch;
   width: 2ch;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 1ch;
-  margin-left: -3ch;
-  vertical-align: bottom;
 }
 
-.doc .ulist.issue.new li > p:first-child::before {
+.doc .ulist.issue li > p:first-child {
+  display: none;
+}
+
+.doc .ulist.issue.new li::before {
   background-image: url(../img/issue-new.svg);
 }
 
-.doc .ulist.issue.task li > p:first-child::before {
+.doc .ulist.issue.task li::before {
   background-image: url(../img/issue-task.svg);
 }
 
-.doc .ulist.issue.bug li > p:first-child::before {
+.doc .ulist.issue.bug li::before {
   background-image: url(../img/issue-bug.svg);
 }
 
-.doc .ulist.issue.cosmetic li > p:first-child::before {
+.doc .ulist.issue.cosmetic li::before {
   background-image: url(../img/issue-cosmetic.svg);
 }

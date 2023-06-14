@@ -970,22 +970,37 @@ Learn how to troubleshoot and solve problems with {product} deployments.
 === Issues
 
 [.issue.new]
-- Lorem ipsum dolor
+- {zwsp}
 +
+--
+Lorem ipsum dolor
+
 I am a banana!
+--
 
 [.issue.task]
-- Lorem ipsum dolor
+- {zwsp}
 +
+--
+Lorem ipsum dolor
+
 I am a banana!
+--
 
 [.issue.bug]
-- Lorem ipsum dolor
+- {zwsp}
 +
+--
+Lorem ipsum dolor
+
 I am a banana!
+--
 
 [.issue.cosmetic]
-- Lorem ipsum dolor
+- {xwsp}
 +
-I am a banana!
+--
+Lorem ipsum dolor
 
+I am a banana!
+--
