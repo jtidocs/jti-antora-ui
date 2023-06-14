@@ -985,6 +985,12 @@ I am a banana!
 Lorem ipsum dolor
 
 I am a banana!
+
+And a subordinate list:
+
+- One
+- `Two`
+- Three
 --
 
 [.issue.bug]

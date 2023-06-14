@@ -1,12 +1,12 @@
-.doc .ulist.issue ul {
+.doc .ulist.issue > ul {
   list-style: none;
 }
 
-.doc .ulist.issue li {
+.doc .ulist.issue > ul > li {
   position: relative;
 }
 
-.doc .ulist.issue li::before {
+.doc .ulist.issue > ul > li::before {
   content: ' ';
   display: block;
   position: absolute;
@@ -18,7 +18,7 @@
   background-repeat: no-repeat;
 }
 
-.doc .ulist.issue li > p:first-child {
+.doc .ulist.issue > ul > li > p:first-child {
   display: none;
 }
 
