@@ -965,3 +965,27 @@ Learn how to update an {product} deployment.
 Learn how to troubleshoot and solve problems with {product} deployments.
 ****
 --
+
+
+=== Issues
+
+[.issue.new]
+- Lorem ipsum dolor
++
+I am a banana!
+
+[.issue.task]
+- Lorem ipsum dolor
++
+I am a banana!
+
+[.issue.bug]
+- Lorem ipsum dolor
++
+I am a banana!
+
+[.issue.cosmetic]
+- Lorem ipsum dolor
++
+I am a banana!
+
