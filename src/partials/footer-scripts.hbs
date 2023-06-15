@@ -3,3 +3,6 @@
 <script id="site-script" src="{{{uiRootPath}}}/js/site.js" data-ui-root-path="{{{uiRootPath}}}"></script>
 <script async src="{{{uiRootPath}}}/js/vendor/prism.js"></script>
 <script async src="{{{uiRootPath}}}/js/vendor/medium-zoom.js"></script>
+{{#if page.attributes.custom-js}}
+    <link rel="stylesheet" href="{{{uiRootPath}}}/js/{{{page.attributes.custom-js}}}">
+{{/if}
