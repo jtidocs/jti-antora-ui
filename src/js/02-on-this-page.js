@@ -1,6 +1,13 @@
 ;(function () {
   'use strict'
 
+  var lastActiveFragment
+  var articleSelector = 'article.doc'
+  var article = document.querySelector(articleSelector)
+  var headings
+  var links
+  var list
+
   window.otpSetup = () => {
     var sidebar = document.querySelector('aside.toc.sidebar')
     if (!sidebar) return
@@ -8,8 +15,6 @@
     var levels = parseInt(sidebar.dataset.levels || 2, 10)
     if (levels < 0) return
 
-    var articleSelector = 'article.doc'
-    var article = document.querySelector(articleSelector)
     var headingsSelector = []
     for (var level = 0; level <= levels; level++) {
       var headingSelector = [articleSelector]
@@ -21,12 +26,11 @@
       }
       headingsSelector.push(headingSelector.join('>'))
     }
-    var headings = find(headingsSelector.join(','), article.parentNode)
+    headings = find(headingsSelector.join(','), article.parentNode)
     if (!headings.length) return sidebar.parentNode.removeChild(sidebar)
 
-    var lastActiveFragment
-    var links = {}
-    var list = headings.reduce(function (accum, heading) {
+    links = {}
+    list = headings.reduce(function (accum, heading) {
       var link = document.createElement('a')
       link.textContent = heading.textContent
       links[(link.href = '#' + heading.id)] = link
@@ -60,7 +64,6 @@
     onScroll()
     window.addEventListener('scroll', onScroll)
   })
-
 
   function onScroll () {
     var scrolledBy = window.pageYOffset
