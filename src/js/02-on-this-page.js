@@ -10,6 +10,7 @@
 
   window.otpSetup = () => {
     console.log('otpSetup!')
+    article = document.querySelector(articleSelector)
     var sidebar = document.querySelector('aside.toc.sidebar')
     if (!sidebar) {
       console.log('No sidebar!')
