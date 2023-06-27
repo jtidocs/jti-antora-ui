@@ -38,7 +38,7 @@
     }
     headings = find(headingsSelector.join(','), article.parentNode)
     if (!headings.length) {
-      console.log('No headings found with selector:', headingSelector), article.parentNode
+      console.log('No headings found with selector:', headingSelector, article.parentNode)
       return // sidebar.parentNode.removeChild(sidebar)
     }
 
