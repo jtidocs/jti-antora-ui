@@ -38,8 +38,9 @@
       headingsSelector.push(headingSelector.join('>'))
     }
     headings = find(headingsSelector.join(','), article.parentNode)
+    console.log('Headings found with selector:', headingSelector, article.parentNode)
+      console.log(headings)
     if (!headings.length) {
-      console.log('No headings found with selector:', headingSelector, article.parentNode)
       return // sidebar.parentNode.removeChild(sidebar)
     }
 
