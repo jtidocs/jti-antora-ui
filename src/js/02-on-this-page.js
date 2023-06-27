@@ -10,10 +10,19 @@
 
   window.otpSetup = () => {
     var sidebar = document.querySelector('aside.toc.sidebar')
-    if (!sidebar) return
-    if (document.querySelector('body.-toc')) return sidebar.parentNode.removeChild(sidebar)
+    if (!sidebar) {
+      console.log('No sidebar!')
+      return
+    }
+    if (document.querySelector('body.-toc')) {
+      console.log('Toc disabled!')
+      return sidebar.parentNode.removeChild(sidebar)
+    }
     var levels = parseInt(sidebar.dataset.levels || 2, 10)
-    if (levels < 0) return
+    if (levels < 0) {
+      console.log('Negative levels!')
+      return
+    }
 
     var headingsSelector = []
     for (var level = 0; level <= levels; level++) {
