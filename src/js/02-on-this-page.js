@@ -39,7 +39,7 @@
     headings = find(headingsSelector.join(','), article.parentNode)
     if (!headings.length) {
       console.log('No headings found with selector:', headingSelector)
-      return sidebar.parentNode.removeChild(sidebar)
+      return // sidebar.parentNode.removeChild(sidebar)
     }
 
     links = {}
