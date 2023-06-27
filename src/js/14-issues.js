@@ -1,8 +1,9 @@
 ;(function () {
   'use strict'
 
+  // Add title attributes to li items for release note issues to
+  // identify the issue type.
   const lists = document.querySelectorAll('.doc .ulist.issue')
-  console.log(lists)
   if (lists) {
     lists.forEach((list) => {
       if (list.classList.contains('new')) {
