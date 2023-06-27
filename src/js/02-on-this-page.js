@@ -36,7 +36,10 @@
       headingsSelector.push(headingSelector.join('>'))
     }
     headings = find(headingsSelector.join(','), article.parentNode)
-    if (!headings.length) return sidebar.parentNode.removeChild(sidebar)
+    if (!headings.length) return {
+      console.log('No headings found with selector:', headingSelector)
+      sidebar.parentNode.removeChild(sidebar)
+    }
 
     links = {}
     list = headings.reduce(function (accum, heading) {
