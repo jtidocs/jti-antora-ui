@@ -56,6 +56,10 @@
     }, document.createElement('ul'))
 
     var menu = sidebar.querySelector('.toc-menu')
+    if (menu) {
+      menu.remove()
+      menu = null
+    }
     if (!menu) (menu = document.createElement('div')).className = 'toc-menu'
 
     var title = document.createElement('h3')
