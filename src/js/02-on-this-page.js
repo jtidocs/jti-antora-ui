@@ -9,7 +9,6 @@
   var list
 
   window.otpSetup = () => {
-    console.log('otpSetup!')
     article = document.querySelector(articleSelector)
     var sidebar = document.querySelector('aside.toc.sidebar')
     if (!sidebar) {
@@ -17,12 +16,12 @@
       return
     }
     if (document.querySelector('body.-toc')) {
-      console.log('Toc disabled!')
+      console.log('Sidebar ToC disabled!')
       return sidebar.parentNode.removeChild(sidebar)
     }
     var levels = parseInt(sidebar.dataset.levels || 2, 10)
     if (levels < 0) {
-      console.log('Negative levels!')
+      console.log('Negative ToC levels!')
       return
     }
 
@@ -38,9 +37,9 @@
       headingsSelector.push(headingSelector.join('>'))
     }
     headings = find(headingsSelector.join(','), article.parentNode)
-    console.log('Headings found with selector:', headingsSelector, article.parentNode)
-    console.log(headings)
     if (!headings.length) {
+      // Disable sidebar removal for page like the release notes' range
+      // page that dynamically create content.
       return // sidebar.parentNode.removeChild(sidebar)
     }
 
