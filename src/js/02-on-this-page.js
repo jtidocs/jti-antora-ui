@@ -57,6 +57,9 @@
 
     var menu = sidebar.querySelector('.toc-menu')
     if (!menu) (menu = document.createElement('div')).className = 'toc-menu'
+    menu.querySelectorAll('*').forEach((node) => {
+      node.remove()
+    })
 
     var title = document.createElement('h3')
     title.textContent = sidebar.dataset.title || 'Contents'
