@@ -34,6 +34,10 @@
   background-image: url(../img/issue-bug.svg);
 }
 
+.doc .ulist.issue.defect li::before {
+  background-image: url(../img/issue-defect.svg);
+}
+
 .doc .ulist.issue.cosmetic li::before {
   background-image: url(../img/issue-cosmetic.svg);
 }
