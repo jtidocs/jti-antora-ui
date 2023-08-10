@@ -30,10 +30,13 @@
     window.removeEventListener('load', jumpOnLoad)
   })
 
-  Array.prototype.slice.call(document.querySelectorAll('a[href^="#"]')).forEach(function (el) {
-    var fragment, target
-    if ((fragment = decodeFragment(el.hash)) && (target = document.getElementById(fragment))) {
-      el.addEventListener('click', jumpToAnchor.bind(target))
-    }
-  })
+  window.fragmentJumper = () => {
+    Array.prototype.slice.call(document.querySelectorAll('a[href^="#"]')).forEach(function (el) {
+      var fragment, target
+      if ((fragment = decodeFragment(el.hash)) && (target = document.getElementById(fragment))) {
+        el.addEventListener('click', jumpToAnchor.bind(target))
+      }
+    })
+  }
+  window.fragmentJumper()
 })()
