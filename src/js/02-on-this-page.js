@@ -69,6 +69,7 @@
     var startOfContent = !document.getElementById('toc') && article.querySelector('h1.page ~ :not(.is-before-toc)')
     console.log('startOfContent', startOfContent)
     if (startOfContent) {
+      document.querySelector('aside.toc.embedded')?.remove()
       var embeddedToc = document.createElement('aside')
       embeddedToc.className = 'toc embedded'
       embeddedToc.appendChild(menu.cloneNode(true))
