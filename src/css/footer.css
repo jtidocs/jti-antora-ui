@@ -72,12 +72,21 @@ body.darkMode .footer .logo a:hover svg .carbon { fill: var(--color-black); }
   color: var(--footer-font-color);
 }
 
+.footer .socmed {
+  width: 2rem;
+}
+
 .footer .socmed a {
   text-decoration: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .footer .socmed svg {
   fill: var(--color-jti-glacier);
+  width: 100%;
 }
 
 .footer .socmed a.linkedin:hover svg {
@@ -86,4 +95,8 @@ body.darkMode .footer .logo a:hover svg .carbon { fill: var(--color-black); }
 
 .footer .socmed a.twitter:hover svg {
   fill: #349bf0;
+}
+
+.footer .socmed a.rss:hover svg {
+  fill: #f26522;
 }
