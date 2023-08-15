@@ -67,6 +67,7 @@
     menu.appendChild(list)
 
     var startOfContent = !document.getElementById('toc') && article.querySelector('h1.page ~ :not(.is-before-toc)')
+    console.log('startOfContent', startOfContent)
     if (startOfContent) {
       var embeddedToc = document.createElement('aside')
       embeddedToc.className = 'toc embedded'
