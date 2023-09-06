@@ -1,3 +1,3 @@
 'use strict'
 
-module.exports = (a) => console.log(`logging: `, a)
+module.exports = (a) => console.log('log helper: ', a)
