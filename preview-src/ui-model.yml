@@ -3,6 +3,8 @@ site:
   url: http://localhost:5252
   title: Brand Docs
   homeUrl: &home_url /xyz/5.2/index.html
+  keys:
+    mixpanel: 1234
   components:
   - name: abc
     title: Project ABC
