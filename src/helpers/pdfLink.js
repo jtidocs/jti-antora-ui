@@ -28,6 +28,8 @@ module.exports = (ctx) => {
   }
 
   const component = componentVersion.name
+  if (component === 'ROOT') return false
+
   const version = componentVersion.version
   const filename = componentVersion.title
     .replace(/[&:]/g, '')
