@@ -180,6 +180,7 @@
     }))
 
     if (filter.match(/version\[/)) {
+      console.log(`Adding version filter`)
       instance.add(new PagefindModularUI.FilterPills({
         containerElement: '#results .filters.version',
         filter: 'version',
