@@ -17,8 +17,7 @@
 
   // Hookup events for the search UI buttons
   const buttons = search.querySelectorAll('button')
-  var i
-  for (i = 0; i < buttons.length; i++) {
+  for (let i = 0; i < buttons.length; i++) {
     const button = buttons[i]
     if (button.classList.contains('x')) {
       // button.addEventListener('click', (e) => {
@@ -38,12 +37,12 @@
     const rect = searchContainer.getBoundingClientRect()
     const fontSize = parseInt(window.getComputedStyle(searchContainer).fontSize, 10)
 
-    var left = parseInt('' + rect.x, 10)
-    var width = parseInt('' + rect.width, 10)
+    let left = parseInt('' + rect.x, 10)
+    let width = parseInt('' + rect.width, 10)
 
     // maximize the width of the results on narrow screens
     if (width < 375) {
-      var center = left + Math.floor(width / 2)
+      const center = left + Math.floor(width / 2)
       width = 375
       left = center - Math.floor(width / 2)
     }
@@ -101,18 +100,16 @@
 
   // const hasFocus = () => document.activeElement === searchInput
 
-  var inResults = false
+  let inResults = false
   document.addEventListener('mousedown', (e) => {
     inResults = results.contains(e.target)
   })
 
   const clickResult = (e) => {
-    console.log('result click:', e)
-    var p = e.target
+    let p = e.target
     if (!p.classList.contains(resultClass)) {
       p = findAncestor(p, resultClass)
     }
-    console.log(p.dataset.url)
     e.preventDefault()
     window.location = p.dataset.url
   }
@@ -134,14 +131,14 @@
       }
       if (
         e.relatedTarget === modeToggle ||
-        modeToggle.contains(e.relatedTarget)
+        modeToggle.contains(e.relatedTarget) ||
+        inResults
       ) {
         setTimeout(() => { focusInput() }, 0)
         return
       }
     } else {
       if (inResults) {
-        inResults = false
         setTimeout(() => { focusInput() }, 0)
         return
       }
@@ -157,7 +154,7 @@
 
   window.addEventListener('DOMContentLoaded', () => {
     const article = document.querySelector('article.doc')
-    var siteRoot = article.dataset.antora_siteroot ?? '.'
+    const siteRoot = article.dataset.antora_siteroot ?? '.'
     const PagefindModularUI = window.PagefindModularUI
 
     const instance = new PagefindModularUI.Instance({
@@ -192,8 +189,6 @@
         return '<p>Loading...</p>'
       },
       resultTemplate: (result) => {
-        // console.log('Templating result:', result)
-
         // Compose a relative URL to click to reach the result page
         const url = siteRoot + result.raw_url
 
