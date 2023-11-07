@@ -177,11 +177,13 @@
       alwaysShow: true,
     }))
 
-    instance.add(new PagefindModularUI.FilterPills({
-      containerElement: '#results .filters.version',
-      filter: 'version',
-      alwaysShow: true,
-    }))
+    if (article.dataset['pagefind-filter'].match(/version\[/)) {
+      instance.add(new PagefindModularUI.FilterPills({
+        containerElement: '#results .filters.version',
+        filter: 'version',
+        alwaysShow: true,
+      }))
+    }
 
     instance.add(new PagefindModularUI.ResultList({
       containerElement: '#results .list',
