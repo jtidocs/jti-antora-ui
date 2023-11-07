@@ -155,6 +155,8 @@
   window.addEventListener('DOMContentLoaded', () => {
     const article = document.querySelector('article.doc')
     const siteRoot = article.dataset.antora_siteroot ?? '.'
+    const filter = article.dataset['pagefind-filter']
+    console.log(`Filter: ${filter}`)
     const PagefindModularUI = window.PagefindModularUI
 
     const instance = new PagefindModularUI.Instance({
@@ -177,7 +179,7 @@
       alwaysShow: true,
     }))
 
-    if (article.dataset['pagefind-filter'].match(/version\[/)) {
+    if (filter.match(/version\[/)) {
       instance.add(new PagefindModularUI.FilterPills({
         containerElement: '#results .filters.version',
         filter: 'version',
