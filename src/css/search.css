@@ -232,6 +232,7 @@
 #results .filters::before {
   display: inline-block;
   margin-right: 0.5rem;
+  white-space: pre;
 }
 
 #results .filters.component::before {
