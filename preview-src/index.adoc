@@ -1010,3 +1010,15 @@ Lorem ipsum dolor
 
 I am a banana!
 --
+
+
+=== Procedure
+
+[.procedure]
+. Find a banana
+. Peel the banana.
+  Carefully.
++
+**Carefully!**
+. Eat banana.
+. Have a nap.
