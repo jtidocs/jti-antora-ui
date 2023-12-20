@@ -31,25 +31,22 @@ module.exports = (ctx) => {
   if (component === 'ROOT') return false
 
   let version = componentVersion.version
-  let filename = componentVersion.title
-    .replace(/[&:]/g, '')
-    .replace(/[ ,/"']/g, '-')
-    .replace(/--/g, '-')
-    .toLowerCase() +
-    '.pdf'
+  // let filename = componentVersion.title
+  //   .replace(/[&:]/g, '')
+  //   .replace(/[ ,/"']/g, '-')
+  //   .replace(/--/g, '-')
+  //   .toLowerCase() +
+  //   '.pdf'
 
-  let fVersion = ''
-  if (version.match(/\d{4}\.\d{2}(-LTS)?/)) {
-    fTitle = componentVersion.title
+  let fTitle = componentVersion.title
       .replace(/&.+?;|[^ \p{Alpha}0-9_\-.]/gu, '')
       .replace(/[ _.]/g, '_')
       .replace(/--+/g, '-')
-    fVersion = version
+  let fVersion = version
       .replace(/&.+?;|[^ \p{Alpha}0-9_\-.]/gu, '')
       .replace(/[ _.]/g, '_')
       .replace(/--+/g, '-')
-    filename = `${fTitle}${fVersion}.pdf`
-  }
+  let filename = `${fTitle}${fVersion}.pdf`
 
   const url = `${component}/${version}/${filename}`
   return url
