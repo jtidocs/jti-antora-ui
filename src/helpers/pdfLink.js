@@ -45,7 +45,7 @@ module.exports = (ctx) => {
   const fVersion = version
     ? '-' + version
       .replace(/&.+?;|[^ \p{Alpha}0-9_\-.]/gu, '')
-      .replace(/[ _.]/g, '_')
+      .replace(/[ _.]/g, '-')
       .replace(/--+/g, '-')
     : ''
   const filename = `${fTitle}${fVersion}.pdf`
