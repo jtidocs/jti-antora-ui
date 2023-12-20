@@ -30,7 +30,7 @@ module.exports = (ctx) => {
   const component = componentVersion.name
   if (component === 'ROOT') return false
 
-  let version = componentVersion.version
+  const version = componentVersion.version
   // let filename = componentVersion.title
   //   .replace(/[&:]/g, '')
   //   .replace(/[ ,/"']/g, '-')
@@ -38,15 +38,17 @@ module.exports = (ctx) => {
   //   .toLowerCase() +
   //   '.pdf'
 
-  let fTitle = componentVersion.title
+  const fTitle = componentVersion.title
+    .replace(/&.+?;|[^ \p{Alpha}0-9_\-.]/gu, '')
+    .replace(/[ _.]/g, '_')
+    .replace(/--+/g, '-')
+  const fVersion = version
+    ? '-' + version
       .replace(/&.+?;|[^ \p{Alpha}0-9_\-.]/gu, '')
       .replace(/[ _.]/g, '_')
       .replace(/--+/g, '-')
-  let fVersion = version
-      .replace(/&.+?;|[^ \p{Alpha}0-9_\-.]/gu, '')
-      .replace(/[ _.]/g, '_')
-      .replace(/--+/g, '-')
-  let filename = `${fTitle}${fVersion}.pdf`
+    : ''
+  const filename = `${fTitle}${fVersion}.pdf`
 
   const url = `${component}/${version}/${filename}`
   return url
