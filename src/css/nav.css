@@ -186,6 +186,15 @@ html.is-clipped--nav {
   cursor: pointer;
 }
 
+.nav-panel-explore .label {
+  font-size: calc(13 / var(--rem-base) * 1rem);
+  color: var(--nav-muted-color);
+  padding: 0 0.5rem;
+  display: block;
+  line-height: 1;
+  height: 1rem;
+}
+
 .nav-panel-explore .context .version {
   display: flex;
   align-items: inherit;
