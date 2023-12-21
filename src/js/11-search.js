@@ -160,7 +160,7 @@
     const PagefindModularUI = window.PagefindModularUI
 
     const instance = new PagefindModularUI.Instance({
-      bundlePath: `${siteRoot}/_pagefind/`,
+      bundlePath: `${siteRoot}/pagefind/`,
     })
 
     instance.add(new PagefindModularUI.Input({
