@@ -826,6 +826,28 @@ h|Total
 |6
 |===
 
+
+[%autowidth, cols="a,^a,^a,^a,^a,^a,^a,^a", options="header", stripes="even stripes-hover", role="tight"]
+|===
+| Action
+| One Document
+| Two Documents
+| Three Documents
+| Four Documents
+| Five Documents
+| Six Documents
+| Seven Documents
+
+| Activate sensors
+| ✔
+| ✔
+| ✔
+| ✔
+| ✔
+| ✔
+| ✔
+|===
+
 Cum dicat putant ne.
 Est in reque homero principes, meis deleniti mediocrem ad has.
 Altera atomorum his ex, has cu elitr melius propriae.

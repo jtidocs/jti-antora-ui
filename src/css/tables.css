@@ -104,3 +104,13 @@
 .doc table.tableblock > tfoot th {
   font-size: inherit;
 }
+
+.doc table.tableblock.tight th,
+.doc table.tableblock.tight td {
+  padding: 0.5rem 0.5rem;
+}
+
+.doc table.tableblock.tight th:first-child,
+.doc table.tableblock.tight td:not(.icon):first-child {
+  padding-left: 0.5rem;
+}
