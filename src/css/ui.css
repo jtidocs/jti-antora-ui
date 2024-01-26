@@ -3,11 +3,13 @@
 .doc p code.ui {
   font-family: "NHaasGrotesk-medium", sans-serif;
   font-weight: 400;
+  font-size: 1em;
   background-color: var(--color-white);
   padding: 0;
 }
 
-.doc b.button {
+.doc b.button,
+.doc b.menu {
   font-family: "NHaasGrotesk-medium", sans-serif;
   font-weight: 400;
 }
