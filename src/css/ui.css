@@ -1,0 +1,13 @@
+
+/* All UI macros instances have the `ui` class */
+.doc p code.ui {
+  font-family: "NHaasGrotesk-medium", sans-serif;
+  font-weight: 400;
+  background-color: var(--color-white);
+  padding: 0;
+}
+
+.doc b.button {
+  font-family: "NHaasGrotesk-medium", sans-serif;
+  font-weight: 400;
+}

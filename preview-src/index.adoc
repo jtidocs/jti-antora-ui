@@ -4,6 +4,7 @@ Author Name
 :idseparator: -
 :!example-caption:
 :!table-caption:
+:experimental:
 :page-pagination:
 :product: eDMV
 
@@ -1044,3 +1045,38 @@ I am a banana!
 **Carefully!**
 . Eat banana.
 . Have a nap.
+
+
+=== UI labels
+
+[%autowidth, cols="a,a,a", options="header"]
+|===
+| Markup
+| Result
+| In prose
+
+| `ui:screen[Label]`
+| [.ui.ui-screen]``Label``
+| Navigate to the [.ui.ui-screen]``Configuration`` screen.
+
+| `ui:page[Label]`
+| [.ui.ui-page]``Label``
+| Navigate to the [.ui.ui-page]``Email Configuration`` page.
+
+| `ui:panel[Label]`
+| [.ui.ui-panel]``Label``
+| Drag the gadget to the [.ui.ui-panel]``Left`` panel.
+
+| `ui:nav[Label]`
+| [.ui.ui-nav]``Label``
+| The link shows in the left navigation, under the [.ui.ui-nav]``System Administration`` heading.
+
+| `ui:field[Label]`
+| [.ui.ui-field]``Label``
+| Select the [.ui.ui-field]``Hide field`` checkbox to hide the field.
+
+| `\btn:[Label]`
+| btn:[Label]
+| Click btn:[Save] to record your changes.
+
+|===

@@ -13,14 +13,14 @@
 }
 
 @font-face {
-  font-family: "NHaasGrotesk";
+  font-family: "NHaasGrotesk-medium";
   font-style: italic;
   font-weight: 400;
   src: url("../font/NHaasGroteskTXStd-66MdIt.woff2") format("woff2"), url("font/NHaasGroteskTXStd-66MdIt.woff") format("woff");
 }
 
 @font-face {
-  font-family: "NHaasGrotesk";
+  font-family: "NHaasGrotesk-medium";
   font-style: normal;
   font-weight: 400;
   src: url("../font/NHaasGroteskTXStd-65Md.woff2") format("woff2"), url("../font/NHaasGroteskTXStd-65Md.woff") format("woff");
