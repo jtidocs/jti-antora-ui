@@ -1,7 +1,6 @@
 .doc {
   color: var(--doc-font-color);
   font-size: var(--doc-font-size);
-  hyphens: auto;
   line-height: var(--doc-line-height);
   margin: var(--doc-margin);
   max-width: var(--doc-max-width);
@@ -60,6 +59,12 @@
 @media screen and (min-width: 769px) {
   .doc > h1.page:first-child {
     margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .doc {
+    hyphens: auto;
   }
 }
 
