@@ -989,6 +989,39 @@ Learn how to troubleshoot and solve problems with {product} deployments.
 ****
 --
 
+[.cards.flex.flex-3.products]
+--
+[.card.ecourt.link]
+.xref:eCourt:ROOT:index.adoc[eCourt]
+****
+For appellate, superior, municipal, traffic, probate, and drug courts.
+****
+
+[.card.edefender.link]
+.xref:eDefender:ROOT:index.adoc[eDefender]
+****
+For public defense attorney offices.
+****
+
+[.card.eprosecutor.link]
+.xref:eProsecutor:ROOT:index.adoc[eProsecutor]
+****
+For state, county, and city prosecutors, and Medicaid Fraud Control Units.
+****
+
+[.card.esupervision.link]
+.xref:eSupervision:ROOT:index.adoc[eSupervision]
+****
+For probation, parole, court services, pretrial, and diversion offices.
+****
+
+[.card.eprosecutor.link]
+.xref:eProsecutorOnline:ROOT:index.adoc[eProsecutor Online]
+****
+A cloud-hosted version of eProsecutor, designed for smaller to mid-sized prosecutor agencies.
+****
+--
+
 
 === Issues
 
