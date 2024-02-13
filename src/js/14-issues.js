@@ -32,8 +32,8 @@
         if (li) {
           li.setAttribute('title', 'Cosmetic')
         }
-
       }
+
       if (list.classList.contains('techdebt')) {
         const li = list.querySelector('li')
         if (li) {
