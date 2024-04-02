@@ -161,15 +161,15 @@
   background-color: var(--color-jti-esupervision);
 }
 
-.cards.flex.products .sidebarblock.card.user .title {
+.cards.flex .sidebarblock.card.user .title {
   background-color: var(--color-jti-user);
 }
 
-.cards.flex.products .sidebarblock.card.business .title {
+.cards.flex .sidebarblock.card.business .title {
   background-color: var(--color-jti-business);
 }
 
-.cards.flex.products .sidebarblock.card.admin .title {
+.cards.flex .sidebarblock.card.admin .title {
   background-color: var(--color-jti-admin);
 }
 
