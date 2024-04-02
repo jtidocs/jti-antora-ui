@@ -146,19 +146,31 @@
 }
 
 .cards.flex.products .sidebarblock.card.ecourt .title {
-  background-color: #49bc94;
+  background-color: var(--color-jti-ecourt);
 }
 
 .cards.flex.products .sidebarblock.card.edefender .title {
-  background-color: #d91ea0;
+  background-color: var(--color-jti-edefender);
 }
 
 .cards.flex.products .sidebarblock.card.eprosecutor .title {
-  background-color: #2673ba;
+  background-color: var(--color-jti-eprosecutor);
 }
 
 .cards.flex.products .sidebarblock.card.esupervision .title {
-  background-color: #811191;
+  background-color: var(--color-jti-esupervision);
+}
+
+.cards.flex.products .sidebarblock.card.user .title {
+  background-color: var(--color-jti-user);
+}
+
+.cards.flex.products .sidebarblock.card.business .title {
+  background-color: var(--color-jti-business);
+}
+
+.cards.flex.products .sidebarblock.card.admin .title {
+  background-color: var(--color-jti-admin);
 }
 
 .cards.flex .sidebarblock.card .paragraph {

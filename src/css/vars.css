@@ -25,6 +25,17 @@ body {
   --color-jti-plum: #821293; /* medium purple */
   --color-jti-ruby: #d920a2; /* pink */
 
+  /* JTI product colors */
+  --color-jti-ecourt: #49bc94;
+  --color-jti-edefender: #d91ea0;
+  --color-jti-eprosecutor: #2673ba;
+  --color-jti-esupervision: #811191;
+
+  /* JTI role colors */
+  --color-jti-user: #49bc94;
+  --color-jti-business: #811191;
+  --color-jti-admin: #2673ba;
+
   /* fonts */
   --rem-base: 16; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
   --body-font-size: 1em; /* 17px */
