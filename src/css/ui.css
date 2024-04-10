@@ -4,7 +4,7 @@
   font-family: "NHaasGrotesk-medium", sans-serif;
   font-weight: 400;
   font-size: 1em;
-  background-color: var(--color-white);
+  background-color: transparent;
   padding: 0;
   white-space: pre;
 }
