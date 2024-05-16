@@ -214,6 +214,8 @@ body {
 }
 
 body.darkMode {
+  color-schema: dark;
+
   /* colors */
   --color-smoke-10: #020202;
   --color-smoke-30: #050505;

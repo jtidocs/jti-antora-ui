@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  color-scheme: light;
   background: var(--body-background);
   color: var(--body-font-color);
   font-family: var(--body-font-family);
