@@ -14,3 +14,22 @@
   font-family: "NHaasGrotesk-medium", sans-serif;
   font-weight: 400;
 }
+
+.workingtime {
+  border-radius: 1em;
+  background: var(--color-smoke-90);
+  width: auto;
+  max-width: fit-content;
+  padding-right: 0.5em;
+  margin-bottom: 1em !important;
+}
+
+.workingtime p {
+  padding: 0.25em;
+}
+
+.workingtime p::before {
+  content: "Working time: ";
+  background: url(../img/icon-clock.svg) no-repeat 0.25rem 0.1rem;
+  padding-left: 1.5em;
+}
