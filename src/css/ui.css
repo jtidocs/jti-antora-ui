@@ -33,3 +33,14 @@
   background: url(../img/icon-clock.svg) no-repeat 0.25rem 0.1rem;
   padding-left: 1.5em;
 }
+
+.color-chip span {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-left: 1rem;
+}
+
+.color-chip span:hover {
+  transform: scale(2);
+}
