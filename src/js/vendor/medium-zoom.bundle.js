@@ -4,7 +4,7 @@
     // 'span.frame img, span.zoom img, div.imageblock img',
     'div.imageblock:not(.nozoom) img, span:not(.nozoom) img',
     {
-      background: '#fff',
+      background: 'var(--color-white)',
     }
   )
 })()
