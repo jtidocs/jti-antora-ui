@@ -24,6 +24,7 @@ body {
   --color-jti-royal: #2b57ab; /* dark blue */
   --color-jti-plum: #821293; /* medium purple */
   --color-jti-ruby: #d920a2; /* pink */
+  --color-jti-breaking: #ff6262; /* For Breaking Changes in the release notes */
 
   /* JTI product colors */
   --color-jti-ecourt: #49bc94;
