@@ -112,3 +112,7 @@ dist
 
 # Vim
 *.swp
+
+# IntelliJ
+.idea/
+*.iml
