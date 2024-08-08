@@ -27,6 +27,7 @@ body {
   --color-jti-breaking: #ff6262; /* For Breaking Changes in the release notes */
 
   /* JTI product colors */
+  --color-jti-eattorney: #2d4d92;
   --color-jti-ecourt: #49bc94;
   --color-jti-edefender: #d91ea0;
   --color-jti-eprosecutor: #2673ba;

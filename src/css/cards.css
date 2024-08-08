@@ -146,6 +146,10 @@
   color: var(--color-white);
 }
 
+.cards.flex.products .sidebarblock.card.eattorney .title {
+  background-color: var(--color-jti-eattorney);
+}
+
 .cards.flex.products .sidebarblock.card.ecourt .title {
   background-color: var(--color-jti-ecourt);
 }
