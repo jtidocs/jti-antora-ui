@@ -1,6 +1,8 @@
 
 /* All UI macros instances have the `ui` class */
-.doc p code.ui {
+.doc p code.ui,
+.doc th code.ui,
+.doc td code.ui {
   font-family: "NHaasGrotesk-medium", sans-serif;
   font-weight: 400;
   font-size: 1em;
