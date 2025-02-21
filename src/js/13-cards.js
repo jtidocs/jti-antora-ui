@@ -19,13 +19,13 @@
       }
 
       card.addEventListener('click', (e) => {
-        e.preventDefault()
         const parent = findAncestor(e.target, 'card')
         if (!parent) return
 
         const link = parent.querySelector('.link a')
         if (!link) return
 
+        e.preventDefault()
         window.location = link.getAttribute('href')
       })
     })
