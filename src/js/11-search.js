@@ -156,7 +156,7 @@
     const article = document.querySelector('article.doc')
     const siteRoot = article.dataset.antora_siteroot ?? '.'
     const filter = article.dataset['pagefind-filter']
-    console.log(`Filter: ${filter}`)
+    // console.log(`Filter: ${filter}`)
     const PagefindModularUI = window.PagefindModularUI
 
     const instance = new PagefindModularUI.Instance()
