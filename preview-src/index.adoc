@@ -1116,3 +1116,52 @@ I am a banana!
 | Click btn:[Save] to record your changes.
 
 |===
+
+
+=== Tabs
+
+[tabs]
+====
+Windows::
++
+--
+[.procedure]
+. Navigate to where you need to go.
+
+. Select the option you want to use.
+
+. Click btn:[Save].
+--
+
+Linux::
++
+--
+The other screen is different:
+
+- No screenshot.
+- Different colors.
+- Not the same feature.
+--
+====
+
+
+[tabs]
+====
+A::
++
+--
+Tab A
+--
+
+B::
++
+--
+Tab B
+--
+
+C::
++
+--
+Tab C
+--
+====
