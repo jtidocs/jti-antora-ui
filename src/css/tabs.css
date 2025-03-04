@@ -31,7 +31,6 @@
   line-height: 1.5;
   padding: 0.25em 1em;
   position: relative;
-  border-bottom: 0;
 }
 
 .tablist > ul li:focus-visible {
@@ -90,6 +89,10 @@
   border: 1px solid var(--color-gray-30);
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+}
+
+.tablist > ul li.is-selected {
+  border-bottom: 0;
 }
 
 .tabs.is-loading .tabpanel + .tabpanel,
