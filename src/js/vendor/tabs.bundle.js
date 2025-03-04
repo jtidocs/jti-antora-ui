@@ -108,7 +108,8 @@
   }
 
   function toggleHidden (el, state) {
-    el.classList[(el.hidden === state) ? 'add' : 'remove']('is-hidden')
+    const change = el.hidden = state
+    el.classList[(change) ? 'add' : 'remove']('is-hidden')
   }
 
   function toggleSelected (el, state) {
