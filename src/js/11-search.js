@@ -155,7 +155,7 @@
   window.addEventListener('DOMContentLoaded', () => {
     const article = document.querySelector('article.doc')
     const siteRoot = article.dataset.antora_siteroot ?? '.'
-    const filter = article.dataset['pagefind-filter']
+    // const filter = article.dataset['pagefind-filter']
     // console.log(`Filter: ${filter}`)
     const PagefindModularUI = window.PagefindModularUI
 
