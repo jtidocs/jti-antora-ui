@@ -31,6 +31,8 @@
   line-height: 1.5;
   padding: 0.25em 1em;
   position: relative;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 
 .tablist > ul li:focus-visible {
@@ -67,12 +69,10 @@
   background-color: var(--color-white);
 }
 
-/*
 .tabs:not(.is-loading) .tablist li,
 .tabs:not(.is-loading) .tablist li::after {
-  transition: background-color 200ms ease-in-out;
+  transition: background-color 100ms ease-in-out;
 }
-*/
 
 .tablist > ul p {
   line-height: inherit;
@@ -82,16 +82,12 @@
 .tabpanel {
   background-color: var(--color-white);
   padding: 1.25em;
+  border-top-right-radius: 0.25rem;
 }
 
 .tablist > ul li,
 .tabpanel {
   border: 1px solid var(--color-gray-30);
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-}
-
-.tablist > ul li.is-selected {
   border-bottom: 0;
 }
 
