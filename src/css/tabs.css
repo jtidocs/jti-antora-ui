@@ -79,16 +79,17 @@
   margin: 0;
 }
 
-.tabpanel {
-  background-color: var(--color-white);
-  padding: 1.25em;
-  border-top-right-radius: 0.25rem;
-}
-
 .tablist > ul li,
 .tabpanel {
   border: 1px solid var(--color-gray-30);
   border-bottom: 0;
+}
+
+.tabpanel {
+  background-color: var(--color-white);
+  padding: 1.25em;
+  border-top-right-radius: 0.25rem;
+  border-bottom: 1px solid var(--color-gray-30);
 }
 
 .tabs.is-loading .tabpanel + .tabpanel,
