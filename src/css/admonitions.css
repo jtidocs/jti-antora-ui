@@ -46,6 +46,7 @@
 .doc .admonitionblock .icon .title {
   font-weight: var(--admonition-label-font-weight);
   text-transform: uppercase;
+  font-style: normal;
 }
 
 .doc .admonitionblock.caution .icon,
