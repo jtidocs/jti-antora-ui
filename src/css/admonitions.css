@@ -43,27 +43,37 @@
   transform: translate(-0.5rem, -50%);
 }
 
-.doc .admonitionblock.caution .icon {
+.doc .admonitionblock .icon .title {
+  font-weight: var(--admonition-label-font-weight);
+  text-transform: uppercase;
+}
+
+.doc .admonitionblock.caution .icon,
+.doc .admonitionblock.caution .icon .title {
   background-color: var(--caution-color);
   color: var(--caution-on-color);
 }
 
-.doc .admonitionblock.important .icon {
+.doc .admonitionblock.important .icon,
+.doc .admonitionblock.important .icon .title {
   background-color: var(--important-color);
   color: var(--important-on-color);
 }
 
-.doc .admonitionblock.note .icon {
+.doc .admonitionblock.note .icon,
+.doc .admonitionblock.note .icon .title {
   background-color: var(--note-color);
   color: var(--note-on-color);
 }
 
-.doc .admonitionblock.tip .icon {
+.doc .admonitionblock.tip .icon,
+.doc .admonitionblock.tip .icon .title {
   background-color: var(--tip-color);
   color: var(--tip-on-color);
 }
 
-.doc .admonitionblock.warning .icon {
+.doc .admonitionblock.warning .icon,
+.doc .admonitionblock.warning .icon .title {
   background-color: var(--warning-color);
   color: var(--warning-on-color);
 }
