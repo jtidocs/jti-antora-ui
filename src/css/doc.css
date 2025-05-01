@@ -69,7 +69,7 @@
 }
 
 .doc > h1.page:first-child + aside.toc.embedded {
-  margin-top: -0.5rem;
+  margin: 1.5rem 0;
 }
 
 .doc > h2#name + .sectionbody {
