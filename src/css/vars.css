@@ -201,18 +201,21 @@ body {
   /* PrismJS light colors */
   --prism-foreground: #393a34;
   --prism-background: var(--panel-background);
-  --prism-comment: #758575;
-  --prism-namespace: #444;
-  --prism-string: #bc8671;
-  --prism-punctuation: #80817d;
-  --prism-literal: #36acaa;
-  --prism-keyword: #248459;
-  --prism-function: #849145;
-  --prism-deleted: #9a050f;
-  --prism-class: #2b91af;
   --prism-builtin: #800000;
-  --prism-property: #ce9178;
+  --prism-class: #2b91af;
+  --prism-comment: #758575;
+  --prism-deleted: #9a050f;
+  --prism-expression: var(--code-font-color);
+  --prism-function: #849145;
+  --prism-interpolation: var(--code-font-color);
+  --prism-keyword: #248459;
+  --prism-literal: #36acaa;
+  --prism-namespace: #444;
+  --prism-json-property: #ce9178;
+  --prism-punctuation: #80817d;
   --prism-regex: #ad502b;
+  --prism-string: #9c6671;
+  --prism-variable: var(--code-font-color);
 }
 
 body.darkMode {
@@ -254,17 +257,19 @@ body.darkMode {
   /* PrismJS dark colors */
   --prism-foreground: #d4d4d4;
   --prism-background: var(--panel-background);
-  --prism-namespace: #aaa;
-  --prism-comment: #758575;
-  --prism-namespace: #444;
-  --prism-string: #ce9178;
-  --prism-punctuation: #d4d4d4;
-  --prism-literal: #36acaa;
-  --prism-keyword: #38a776;
-  --prism-function: #dcdcaa;
-  --prism-deleted: #9a050f;
-  --prism-class: #4ec9b0;
   --prism-builtin: #d16969;
-  --prism-property: #ce9178;
+  --prism-class: #4ec9b0;
+  --prism-comment: #758575;
+  --prism-deleted: #9a050f;
+  --prism-expression: var(--code-font-color);
+  --prism-function: #dcdcaa;
+  --prism-interpolation: var(--code-font-color);
+  --prism-keyword: #38a776;
+  --prism-literal: #36acaa;
+  --prism-namespace: #aaa;
+  --prism-json-property: #ce9178;
+  --prism-punctuation: #d4d4d4;
   --prism-regex: #ad502b;
+  --prism-string: #9c6671;
+  --prism-variable: var(--code-font-color);
 }
