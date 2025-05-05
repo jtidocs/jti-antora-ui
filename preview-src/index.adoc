@@ -51,7 +51,7 @@ Eu mea inani iriure.footnote:[Quisque porta facilisis tortor, vitae bibendum vel
 }
 ----
 
-[,java, role="lines-4"]
+[, groovy]
 ----
 def tracking = new DocumentTracking();
 tracking.type = 'SCH';
@@ -60,6 +60,18 @@ def file = _document.file;
 if (file == null) {
   throw new Exception("file is null for ${_document} cannot check searchable!");
 }
+----
+
+[, velocity, role="lines-4"]
+----
+#set ($foo = "deoxyribonucleic acid")
+#set ($bar = "ribonucleic acid")
+
+#if ($foo == $bar)
+  In this case it's clear they aren't equivalent. So...
+#else
+  They are not equivalent and this will be the output.
+#end
 ----
 
 .Example paragraph syntax
