@@ -37,7 +37,7 @@ Type: kbd:[Control + Shift + X]
 Eum an doctus <<liber-recusabo,maiestatis efficiantur>>.
 Eu mea inani iriure.footnote:[Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae! Lorem ipsum dolor sit amet, consectetur adipiscing elit.]
 
-[,json]
+[,json, role="line-numbers"]
 ----
 {
   "name": "module-name",
@@ -48,6 +48,17 @@ Eu mea inani iriure.footnote:[Quisque porta facilisis tortor, vitae bibendum vel
     "test": "mocha",
     "lint": "eslint"
   }
+}
+----
+
+[,java, role="lines-4"]
+----
+def tracking = new DocumentTracking();
+tracking.type = 'SCH';
+
+def file = _document.file;
+if (file == null) {
+  throw new Exception("file is null for ${_document} cannot check searchable!");
 }
 ----
 
