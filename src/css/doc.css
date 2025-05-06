@@ -184,6 +184,7 @@
   hyphens: none;
 }
 
+.doc .wrap code,
 .doc code.wrap {
   overflow-wrap: anywhere;
 }
