@@ -50,9 +50,9 @@ module.exports = (src, dest, preview) => () => {
     postcssVar({ preserve: preview }),
     // NOTE to make vars.css available to all top-level stylesheets, use the next line in place of the previous one
     //postcssVar({ importFrom: path.join(src, 'css', 'vars.css'), preserve: preview }),
-    preview ? postcssCalc : () => {}, // cssnano already applies postcssCalc
+    preview || true ? postcssCalc : () => {}, // cssnano already applies postcssCalc
     autoprefixer,
-    preview
+    preview || true
       ? () => {}
       : (css, result) => cssnano({ preset: 'default' })(css, result).then(() => postcssPseudoElementFixer(css, result)),
   ]
