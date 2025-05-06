@@ -321,5 +321,4 @@ body.darkMode {
   --prism-regex: #ad502b;
   --prism-string: #9c6671;
   --prism-variable: var(--code-font-color);
-
 }
