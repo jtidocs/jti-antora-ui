@@ -1,6 +1,7 @@
 @import "typeface-roboto.css";
 @import "typeface-roboto-mono.css";
 @import "typeface-nhaasgrotesk.css";
+@import "prism.css";
 @import "vars.css";
 @import "base.css";
 @import "body.css";
@@ -13,7 +14,6 @@
 @import "admonitions.css";
 @import "tables.css";
 @import "tabs.css";
-@import "prism.css";
 @import "mode-toggle.css";
 @import "medium-zoom.css";
 @import "doc.css";
