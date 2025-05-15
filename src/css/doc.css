@@ -310,6 +310,10 @@
   vertical-align: middle;
 }
 
+.doc .imageblock.whitebg {
+  background-color: var(--color-always-white);
+}
+
 .doc .image:not(.left):not(.right) > img {
   margin-top: -0.2em;
 }
