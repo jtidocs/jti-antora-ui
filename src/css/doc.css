@@ -310,7 +310,7 @@
   vertical-align: middle;
 }
 
-.doc .imageblock.whitebg {
+.doc .imageblock.whitebg img {
   background-color: var(--color-always-white);
 }
 
