@@ -30,6 +30,10 @@
   padding-left: 4rem;
 }
 
+.doc .sidebarblock.card > .content > .ulist {
+  margin-bottom: 1rem;
+}
+
 .doc .sidebarblock.card .imageblock.icon,
 .doc .sidebarblock.card .image.icon {
   position: absolute;
