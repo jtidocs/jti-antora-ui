@@ -114,3 +114,7 @@
 .doc table.tableblock.tight td:not(.icon):first-child {
   padding-left: 0.5rem;
 }
+
+.doc table.tableblock.uith th code.ui {
+  white-space: normal;
+}
