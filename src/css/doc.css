@@ -185,6 +185,7 @@
 }
 
 .doc .wrap code,
+.doc .wrap code.ui,
 .doc code.wrap {
   overflow-wrap: anywhere;
 }
