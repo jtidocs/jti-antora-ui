@@ -188,6 +188,7 @@
 .doc .wrap code.ui,
 .doc code.wrap {
   overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .doc pre {
