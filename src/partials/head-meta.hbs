@@ -1,1 +1,16 @@
     {{!-- Add additional meta tags here --}}
+ {{#if page.attributes.render-attrs}}
+ {{/if}}
+ {{!-- #each page.attributes}}
+     <meta name="attribute" content=":{{{@key}}}: {{this}}"/>
+ {{/each --}}
+
+{{!-- #with (resolvePage page.relativeSrcPath model=false)}}
+  {{#each ./asciidoc.attributes}}
+    <meta name="attribute" content=":{{{@key}}}: {{this}}"/>
+  {{/each}}
+{{/with --}}
+
+{{#with (resolvePage page.relativeSrcPath model=false)}}
+{{log this}}
+{{/with}}
