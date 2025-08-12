@@ -207,10 +207,12 @@
 
 .doc .right {
   float: right;
+  margin-left: 1rem;
 }
 
 .doc .left {
   float: left;
+  margin-right: 1rem;
 }
 
 .doc .float-gap.right {
