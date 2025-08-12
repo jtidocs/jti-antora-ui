@@ -212,7 +212,6 @@
 
 .doc .left {
   float: left;
-  margin-right: 1rem;
 }
 
 .doc .float-gap.right {
@@ -297,9 +296,15 @@
   align-items: flex-start;
 }
 
+.doc .imageblock.left,
+.doc .videoblock.left {
+  margin-right: 1rem;
+}
+
 .doc .imageblock.right,
 .doc .videoblock.right {
   align-items: flex-end;
+  margin-left: 1rem;
 }
 
 .doc .imageblock img,
