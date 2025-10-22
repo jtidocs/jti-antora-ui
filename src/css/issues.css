@@ -45,3 +45,7 @@
 .doc .ulist.issue.techdebt li::before {
   background-image: url(../img/issue-techdebt.svg);
 }
+
+.doc .jira kbd {
+  text-indent: 0;
+}
