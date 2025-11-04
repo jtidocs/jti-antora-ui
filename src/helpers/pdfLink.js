@@ -1,6 +1,7 @@
 'use strict'
 
 const util = require('util')
+const path = require('path')
 
 let output = false
 
@@ -50,6 +51,11 @@ module.exports = (ctx) => {
     : ''
   const filename = `${fTitle}${fVersion}.pdf`
 
-  const url = `${component}/${version}/${filename}`
+  const segments = []
+  segments.push(component)
+  if (version) segments.push(version)
+  segments.push(filename)
+
+  const url = path.join(...segments)
   return url
 }
