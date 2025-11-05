@@ -8,7 +8,7 @@ site:
   homeUrl: &home_url /xyz/5.2/index.html
   keys:
     mixpanel: 1234
-    zendesk_hc_url: https://jtieseries.zendesk.com/hc/en-us #sandbox = https://journaltech1743783328.zendesk.com/hc/en-us
+    zendesk_hc_url: https://jtieseries.zendesk.com #sandbox = https://journaltech1743783328.zendesk.com
     auth0_domain: dev-1234.us.auth0.com
     auth0_client: 5678
   components:
