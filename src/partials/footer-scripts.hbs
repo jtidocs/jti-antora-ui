@@ -1,4 +1,5 @@
-{{#if page.attributes.no_dark_mode}}
+{{#if (not page.attributes.no_dark_mode)}}
+{{else}}
 <script>window.onlylight = true</script>
 {{/if}}
 <link href="{{{siteRootPath}}}/pagefind/pagefind-modular-ui.css" rel="stylesheet">
