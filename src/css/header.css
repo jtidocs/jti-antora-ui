@@ -226,6 +226,14 @@ body.darkMode .navbar-brand a:hover svg .carbon { fill: var(--color-jti-carbon);
   white-space: nowrap;
 }
 
+#logout-btn {
+  cursor: pointer;
+}
+
+#logout-btn:hover {
+  background-color: var(--color-jti-jade);
+}
+
 @media screen and (max-width: 768.5px) {
   .navbar-brand .navbar-item.search {
     padding-left: 0;
