@@ -7,7 +7,7 @@
 <script>
   document.getElementById('logout-btn').addEventListener('click', function() {
     document.cookie = 'access_token=; max-age=0; path=/; secure; samesite=strict'
-    const returnTo = window.location.origin
+    const returnTo = {{site.keys.zendeskHcUrl}}
     window.location.href = `https://{{site.keys.auth0Domain}}/v2/logout?returnTo=${encodeURIComponent(returnTo)}&client_id={{site.keys.auth0Client}}`
   })
 </script>
