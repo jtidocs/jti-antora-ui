@@ -12,13 +12,20 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: no-wrap;
-  cursor: text;
   padding: 0.2rem 0.3rem;
   box-sizing: border-box;
 }
 
+#search input {
+  cursor: pointer;
+}
+
 #search .content:focus-within {
   box-shadow: var(--search-outline-color) 0 0 4px 4px;
+}
+
+#search input:focus {
+  cursor: text;
 }
 
 #search button.q,
