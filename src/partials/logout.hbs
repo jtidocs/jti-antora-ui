@@ -1,14 +1,19 @@
 {{#if page.attributes.show_logout}}
 <div class="navbar-item hide-for-print">
   <span class="control">
-    <a class="button is-primary" id="logout-btn" >Log out</a>
+    <a class="button is-primary" id="logout-btn" href="https://{{site.keys.auth0Domain}}/v2/logout?client_id={{site.keys.auth0Client}}" >Log out</a>
   </span>
 </div>
 <script>
-  document.getElementById('logout-btn').addEventListener('click', function() {
-    document.cookie = 'access_token=; max-age=0; path=/; secure; samesite=strict'
-    const returnTo = '{{site.keys.zendeskHcUrl}}'
-    window.location.href = `https://{{site.keys.auth0Domain}}/v2/logout?returnTo=${encodeURIComponent(returnTo)}&client_id={{site.keys.auth0Client}}`
+  document.getElementById('logout-btn').addEventListener('click', function(e) {
+    e.preventDefault()
+    for (let cookieName of ['access_token', 'id_token', 'refresh_token', 'auth0']) {
+      document.cookie = `${cookieName}=; max-age=0; path=/; secure; samesite=strict`
+    }
+    let link = document.getElementById('logout-btn')
+    let url = new URL(link.href)
+    url.searchParams.append('returnTo', '{{site.keys.zendeskHcUrl}}')
+    window.location.href = url.toString()
   })
 </script>
 {{/if}}
