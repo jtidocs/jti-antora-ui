@@ -7,6 +7,7 @@ Author Name
 :experimental:
 :page-pagination:
 :product: eDMV
+:x: ✔
 
 [.workingtime]
 1 minute.
@@ -854,6 +855,10 @@ h|Total
 |===
 
 
+=== Small tables
+
+[.tablecontainer]
+--
 [%autowidth, cols="a,^a,^a,^a,^a,^a,^a,^a", options="header", stripes="even stripes-hover", role="tight"]
 |===
 | Action
@@ -873,6 +878,41 @@ h|Total
 | ✔
 | ✔
 | ✔
+|===
+--
+
+[.tablecontainer]
+--
+[cols="2a,a,a,a,a,a,a", options="header", role="uith"]
+|===
+| Property
+| [.ui.ui-field]``New Case forms``
+| [.ui.ui-field]``Header forms``
+| [.ui.ui-field]``Folder Views``
+| [.ui.ui-field]``Add forms``
+| [.ui.ui-field]``Update forms``
+| [.ui.ui-field]``Searches``
+
+| [.ui.ui-field]``Conditions``
+| {x}
+| {x}
+| {x}
+| {x}
+| {x}
+| {x}
+|===
+--
+
+[%autowidth, cols="a,a", options="header"]
+|===
+| Field
+| Description
+
+| `Conditions`
+| Use the `Conditions` dropdown to filter the items to show.
+
+This condition is more powerful than a simple condition.
+For example, you can show only records where the case is `Disposed` and jury fees are posted.
 |===
 
 Cum dicat putant ne.
