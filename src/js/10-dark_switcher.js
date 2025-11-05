@@ -5,15 +5,18 @@
   const modeClass = 'darkMode'
   const body = document.body
   const toggle = document.querySelector('#mode-toggle')
+  const light = 'light'
+  const dark = 'dark'
 
   const getMode = () => {
     var isDark = window.localStorage.getItem(preferenceName)
+    if (window.onlylight) isDark = light
     if (!isDark ||
-      (isDark !== 'light' && isDark !== 'dark')
+      (isDark !== light && isDark !== dark)
     ) {
       isDark = window?.matchMedia?.('(prefers-color-scheme:dark)')?.matches
-        ? 'dark'
-        : 'light'
+        ? dark
+        : light
       setMode(isDark)
     }
 
@@ -22,13 +25,13 @@
 
   function modeSwitch () {
     var isDark = getMode()
-    isDark = (isDark === 'light') ? 'dark' : 'light'
+    isDark = (isDark === light) ? dark : light
     setMode(isDark)
   }
 
   function setMode (isDark) {
     // toggle.innerText = (isDark === 'dark') ? '🌞' : '🌚'
-    if (isDark === 'dark') {
+    if (isDark === dark) {
       body.classList.add(modeClass)
     } else {
       body.classList.remove(modeClass)
