@@ -34,7 +34,6 @@
 
 .doc table.tableblock th {
   font-size: var(--table-header-font-size);
-  text-transform: uppercase;
 }
 
 .doc table.tableblock,
