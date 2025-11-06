@@ -7,7 +7,16 @@ body {
 }
 
 .navbar {
-  background: var(--navbar-background);
+  background: #0073bb;
+  background:
+    linear-gradient(
+      52deg,
+      rgba(172, 51, 146, 1) 0%,
+      rgba(0, 115, 187, 1) 22%,
+      rgba(0, 115, 187, 1) 76%,
+      rgba(51, 193, 220, 1) 94%,
+      rgba(1, 181, 136, 1) 100%
+    );
   color: var(--navbar-font-color);
   font-size: calc(16 / var(--rem-base) * 1rem);
   height: var(--navbar-height);
