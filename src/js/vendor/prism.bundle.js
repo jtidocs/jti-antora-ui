@@ -13,6 +13,10 @@
       }
     }
   }
+  const codeBlocks = document.querySelectorAll('.doc .listingblock code')
+  for (const b of codeBlocks) {
+    b.setAttribute('tabindex', '0')
+  }
 
   const Prism = require('prismjs')
   window.Prism = Prism
