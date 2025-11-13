@@ -64,5 +64,5 @@
 }
 
 .toolbar .edit-this-page a {
-  color: var(--toolbar-muted-color);
+  color: var(--toolbar-font-color);
 }
