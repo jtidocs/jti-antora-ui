@@ -1,7 +1,9 @@
 {{#if page.attributes.show_logout}}
 <div class="navbar-item hide-for-print">
   <span class="control">
-    <a class="button is-primary" id="logout-btn" href="https://{{site.keys.auth0Domain}}/v2/logout?client_id={{site.keys.auth0Client}}" >Log out</a>
+    <a class="button is-primary"
+       id="logout-btn"
+       href="https://{{site.keys.auth0Domain}}/oidc/logout?client_id={{site.keys.auth0Client}}">Log out</a>
   </span>
 </div>
 <script>
@@ -12,7 +14,7 @@
     }
     let link = document.getElementById('logout-btn')
     let url = new URL(link.href)
-    url.searchParams.append('returnTo', '{{site.keys.zendeskHcUrl}}')
+    url.searchParams.append('post_logout_redirect_uri', '{{site.keys.zendeskHcUrl}}')
     window.location.href = url.toString()
   })
 </script>
