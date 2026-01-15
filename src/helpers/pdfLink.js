@@ -10,7 +10,7 @@ module.exports = (ctx) => {
     output = false
     console.log(
       'ctx:',
-      util.inspect(ctx.data.root.page, {
+      util.inspect(ctx?.data?.root?.page, {
         showHidden: false,
         depth: null,
         maxArrayLength: null,
@@ -18,7 +18,7 @@ module.exports = (ctx) => {
     )
   }
 
-  const { componentVersion } = ctx.data?.root?.page || {}
+  const { componentVersion } = ctx?.data?.root?.page || {}
   if (
     !componentVersion ||
     !componentVersion.asciidoc ||
