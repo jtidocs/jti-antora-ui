@@ -18,7 +18,7 @@ module.exports = (ctx) => {
     )
   }
 
-  const { componentVersion } = ctx.data.root.page
+  const { componentVersion } = ctx.data?.root?.page
   if (
     !componentVersion ||
     !componentVersion.asciidoc ||
