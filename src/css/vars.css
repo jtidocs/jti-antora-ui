@@ -54,7 +54,7 @@ body {
 
   /* base */
   --body-background: var(--color-jti-glacier);
-  --panel-background: var(--color-jti-glacier);
+  --panel-background: var(--body-background);
   --panel-border-color: var(--color-smoke-90);
   --scrollbar-track-color: var(--color-smoke-30);
   --scrollbar-thumb-color: var(--color-gray-10);
@@ -101,6 +101,30 @@ body {
   --warning-color: #e18114;
   --warning-on-color: var(--color-white);
 
+  /* REST API methods */
+  --api-get-color: green;
+  --api-get-font-color: var(--color-black);
+  --api-get-color-bg: lightgreen;
+  --api-post-color: purple;
+  --api-post-font-color: var(--color-white);
+  --api-post-color-bg: mediumpurple;
+  --api-put-color: blue;
+  --api-put-font-color: var(--color-white);
+  --api-put-color-bg: lightblue;
+  --api-del-color: red;
+  --api-del-font-color: var(--color-white);
+  --api-del-color-bg: darkred;
+
+  .api.put {
+    background-color: lightblue;
+    border: 1px solid blue;
+  }
+
+  .api.del {
+    background-color: red;
+    border: 1px solid darkred;
+  }
+
   /* doc */
   --doc-font-color: var(--color-jti-carbon);
   --doc-font-size: inherit;
@@ -126,7 +150,7 @@ body {
   --caption-font-style: italic;
   --caption-font-weight: var(--body-font-weight-bold);
   --code-background: var(--panel-background);
-  --code-font-color: var(--body-font-color);
+  --code-font-color: var(--color-black);
   --example-background: var(--color-white);
   --example-border-color: var(--color-gray-70);
   --kbd-background: var(--panel-background);
@@ -199,26 +223,6 @@ body {
   --z-index-page-version-menu: 3;
   --z-index-navbar: 4;
 
-  /* PrismJS light colors */
-  --prism-scheme: light;
-  --prism-foreground: #393a34;
-  --prism-background: var(--panel-background);
-  --prism-builtin: #800000;
-  --prism-class: #2b91af;
-  --prism-comment: #758575;
-  --prism-deleted: #9a050f;
-  --prism-expression: var(--code-font-color);
-  --prism-function: #849145;
-  --prism-interpolation: var(--code-font-color);
-  --prism-keyword: #248459;
-  --prism-literal: #36acaa;
-  --prism-namespace: #444;
-  --prism-json-property: #ce9178;
-  --prism-punctuation: #80817d;
-  --prism-regex: #ad502b;
-  --prism-string: #9c6671;
-  --prism-variable: var(--code-font-color);
-
   /* from Prism Base */
   --prism-decorator: var(--prism-class);
   --prism-operator: var(--prism-punctuation);
@@ -233,6 +237,26 @@ body {
   --prism-regex: var(--prism-string);
   --prism-json-property: var(--prism-property);
   --prism-inline-background: var(--prism-background);
+
+  /* PrismJS light colors */
+  --prism-scheme: light;
+  --prism-foreground: var(--code-font-color);
+  --prism-background: var(--panel-background);
+  --prism-builtin: #800000;
+  --prism-class: #1b718f;
+  --prism-comment: #758575;
+  --prism-deleted: #9a050f;
+  --prism-expression: var(--code-font-color);
+  --prism-function: #647125;
+  --prism-interpolation: var(--code-font-color);
+  --prism-keyword: #147449;
+  --prism-literal: #168c8a;
+  --prism-namespace: #444;
+  --prism-json-property: #9e6148;
+  --prism-punctuation: #80817d;
+  --prism-regex: #ad502b;
+  --prism-string: #7c2631;
+  --prism-variable: #141974;
 
   /* Token Styles */
   --prism-comment-style: italic;

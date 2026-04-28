@@ -1,0 +1,43 @@
+.api {
+  display: inline-block;
+  font-style: normal;
+  font-weight: bold;
+  color: var(--color-black);
+  background-color: lightgreen;
+  border: 1px solid green;
+  border-radius: var(--border-radius);
+  padding: 0.1em 0.25em;
+  border: 1px solid gray;
+}
+
+.api.get {
+  color: var(--api-get-font-color);
+  background-color: var(--api-get-color-bg);
+  border-color: var(--api-get-color);
+}
+
+.api.post {
+  color: var(--api-post-font-color);
+  background-color: var(--api-post-color-bg);
+  border-color: var(--api-post-color);
+}
+
+.api.put {
+  color: var(--api-put-font-color);
+  background-color: var(--api-put-color-bg);
+  border-color: var(--api-put-color);
+}
+
+.api.del {
+  color: var(--api-del-font-color);
+  background-color: var(--api-del-color-bg);
+  border-color: var(--api-del-color);
+}
+
+.endpoint {
+  font-style: normal;
+}
+
+.download {
+  float: right;
+}
