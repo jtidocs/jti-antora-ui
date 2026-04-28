@@ -3,11 +3,10 @@
   font-style: normal;
   font-weight: bold;
   color: var(--color-black);
-  background-color: lightgreen;
-  border: 1px solid green;
+  background-color: lightgray;
+  border: 1px solid gray;
   border-radius: var(--border-radius);
   padding: 0.1em 0.25em;
-  border: 1px solid gray;
 }
 
 .api.get {
