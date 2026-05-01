@@ -111,9 +111,9 @@ body {
   --api-put-color: blue;
   --api-put-font-color: var(--color-white);
   --api-put-color-bg: lightblue;
-  --api-delete-color: red;
+  --api-delete-color: darkred;
   --api-delete-font-color: var(--color-white);
-  --api-delete-color-bg: darkred;
+  --api-delete-color-bg: red;
 
   .api.put {
     background-color: lightblue;
