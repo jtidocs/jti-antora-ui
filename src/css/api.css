@@ -27,7 +27,7 @@
   border-color: var(--api-put-color);
 }
 
-.api.del {
+.api.delete {
   color: var(--api-del-font-color);
   background-color: var(--api-del-color-bg);
   border-color: var(--api-del-color);
