@@ -28,9 +28,9 @@
 }
 
 .api.delete {
-  color: var(--api-del-font-color);
-  background-color: var(--api-del-color-bg);
-  border-color: var(--api-del-color);
+  color: var(--api-delete-font-color);
+  background-color: var(--api-delete-color-bg);
+  border-color: var(--api-delete-color);
 }
 
 .endpoint {
