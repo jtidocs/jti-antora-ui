@@ -1,5 +1,7 @@
 {{#with page.versions}}
 {{#each this}}
+{{log ./version}}
+{{log @root.page.version}}
 {{#if (eq ./version @root.page.version) }}
 {{!-- Do not show anything if the vurrent version is the latest. --}}
 {{else}}
