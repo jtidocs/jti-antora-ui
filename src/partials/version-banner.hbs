@@ -1,0 +1,12 @@
+{{#with page.versions}}
+{{#each this}}
+{{#if (eq ./version @root.page.version) }}
+{{!-- Do not show anything if the vurrent version is the latest. --}}
+{{else}}
+<div class="old-version">
+  This is an older version of the documentation.
+  Go to the <a href="{{./url}}">current documentation</a>
+</div>
+{{/if}}
+{{/each}}
+{{/with}}

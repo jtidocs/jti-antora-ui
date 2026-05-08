@@ -1,0 +1,8 @@
+div.old-version {
+  background: var(--warning-color);
+  padding: 0.75em 1em;
+  border: 2px solid var(--important-color)
+  border-radius: var(--border-radius-large);
+  margin: 1em 0;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.3);
+}
