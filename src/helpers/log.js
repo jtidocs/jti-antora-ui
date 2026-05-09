@@ -1,6 +1,6 @@
 'use strict'
 
 module.exports = (...a) => {
-  let b = a.pop()
+  a.pop()
   console.log('log helper: ', ...a)
 }
