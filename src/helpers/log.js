@@ -1,3 +1,6 @@
 'use strict'
 
-module.exports = (a) => console.log('log helper: ', a)
+module.exports = (...a) => {
+  let b = a.pop()
+  console.log('log helper: ', ...a)
+}
