@@ -1,14 +1,16 @@
 {{#with page.versions}}
 {{#each this}}
-{{log ./version}}
-{{log @root.page.version}}
-{{#if (eq ./version @root.page.version) }}
+{{#if (eq ./version @root.page.attributes.version) }}
+{{#if (eq ./version @root.page.component.latest.version) }}
+{{!-- log "Versions are equal! " ./url --}}
 {{!-- Do not show anything if the vurrent version is the latest. --}}
 {{else}}
+{{!-- log ./version " !==" @root.page.component.latest.version  " : " ./url --}}
 <div class="old-version">
   This is an older version of the documentation.
   Go to the <a href="{{./url}}">current documentation</a>
 </div>
+{{/if}}
 {{/if}}
 {{/each}}
 {{/with}}
