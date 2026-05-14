@@ -14,12 +14,14 @@
     // Determine current focus, and ignore specific elements
     var active = document.activeElement
     var focused = active
+    var inSearch = false
     if (!focused || focused === document.body) {
       focused = null
     } else {
       focused = document.querySelector(':focus')
       if (active === search) {
         focused = null
+        inSearch = true
       }
     }
     if (focused) return
@@ -44,13 +46,13 @@
         break
 
       case 'ArrowLeft':
-        if (plain) {
+        if (plain && !inSearch) {
           link = document.querySelector('link[rel="prev"]')
         }
         break
 
       case 'ArrowRight':
-        if (plain) {
+        if (plain && !inSearch) {
           link = document.querySelector('link[rel="next"]')
         }
         break
