@@ -5,3 +5,12 @@
   </span>
 </div>
 {{/if}}
+{{#with (resolvePage page.relativeSrcPath model=false)}}
+  {{#with ./assembler.pdf}}
+    <div class="navbar-item hide-for-print">
+      <span class="control">
+        <a class="button is-primary" href="{{{relativize ./file.pub.url}}}">Download PDF</a>
+      </span>
+    </div>
+  {{/with}}
+{{/with}}
