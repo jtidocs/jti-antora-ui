@@ -37,7 +37,7 @@ a:hover {
 }
 
 a:active {
-  background-color: inherit;
+  background-color: none;
 }
 
 code,
@@ -103,6 +103,11 @@ table {
 
 object[type="image/svg+xml"]:not([width]) {
   width: fit-content;
+}
+
+.hide,
+.is-hidden {
+  display: none !important;
 }
 
 ::placeholder {
