@@ -273,7 +273,8 @@
 }
 
 .nav-panel-explore .component .version a {
-  background: var(--nav-border-color);
+  background: var(--nav-component-version-bg);
+  border-color: var(--nav-component-version-border);
   border-radius: 0.25rem;
   white-space: nowrap;
   padding: 0.25em 0.5em;
