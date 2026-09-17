@@ -7,6 +7,7 @@ Author Name
 :experimental:
 :page-pagination:
 :product: eDMV
+:page-no_dark_mode-off: true
 :x: ✔
 
 [.workingtime]

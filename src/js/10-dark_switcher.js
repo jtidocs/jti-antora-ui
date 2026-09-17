@@ -33,8 +33,10 @@
     // toggle.innerText = (isDark === 'dark') ? '🌞' : '🌚'
     if (isDark === dark) {
       body.classList.add(modeClass)
+      toggle.setAttribute('aria-label', 'Switch to light mode.')
     } else {
       body.classList.remove(modeClass)
+      toggle.setAttribute('aria-label', 'Switch to dark mode.')
     }
     window.localStorage.setItem(preferenceName, isDark)
   }
