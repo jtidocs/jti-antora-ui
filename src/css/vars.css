@@ -252,13 +252,20 @@ body {
   --prism-function: #647125;
   --prism-interpolation: var(--code-font-color);
   --prism-keyword: #147449;
-  --prism-literal: #168c8a;
+  --prism-literal: #086c6a;
   --prism-namespace: #444;
-  --prism-json-property: #9e6148;
-  --prism-punctuation: #80817d;
+  --prism-json-property: #722631;
+  --prism-punctuation: #60615d;
   --prism-regex: #ad502b;
-  --prism-string: #7c2631;
+  --prism-string: #5a1320;
   --prism-variable: #141974;
+
+  /* type            old      new
+     json-property   #9e6148  #722631
+     string          #7c2631  #5a1320
+     punctuation     #80817d  #60615d
+     literal         #168c8a  #086c6a
+  */
 
   /* Token Styles */
   --prism-comment-style: italic;
