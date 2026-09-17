@@ -13,10 +13,6 @@
       }
     }
   }
-  const codeBlocks = document.querySelectorAll('.doc .listingblock code')
-  for (const b of codeBlocks) {
-    b.setAttribute('tabindex', '0')
-  }
 
   const Prism = require('prismjs')
   window.Prism = Prism
@@ -47,4 +43,16 @@
   require('prismjs/plugins/keep-markup/prism-keep-markup.min')
   require('prismjs/plugins/line-numbers/prism-line-numbers.min')
   require('prismjs/plugins/line-highlight/prism-line-highlight.min')
+
+  Prism.hooks.add('after-highlight', () => {
+    const codeBlocks = document.querySelectorAll('.doc .listingblock code')
+    for (const b of codeBlocks) {
+      b.removeAttribute('tabindex')
+    }
+
+    const preBlocks = document.querySelectorAll('.doc .listingblock pre')
+    for (const b of preBlocks) {
+      b.removeAttribute('tabindex')
+    }
+  })
 })()
