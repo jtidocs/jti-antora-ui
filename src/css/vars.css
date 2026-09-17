@@ -163,7 +163,7 @@ body {
   --quote-background: var(--panel-background);
   --quote-border-color: var(--color-gray-70);
   --quote-font-color: var(--color-gray-70);
-  --quote-attribution-font-color: var(--color-gray-40);
+  --quote-attribution-font-color: var(--color-gray-60);
   --sidebar-background: var(--color-smoke-90);
 
   /* search */
