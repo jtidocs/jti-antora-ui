@@ -4,9 +4,9 @@ code[class*='language-'] {
   font-size: var(--prism-font-size);
   direction: ltr;
   text-align: left;
-  white-space: pre;
+  white-space: pre-wrap;
   word-spacing: normal;
-  word-break: normal;
+  word-break: break-all;
   line-height: var(--prism-line-height);
   -moz-tab-size: var(--prism-tab-size);
   -o-tab-size: var(--prism-tab-size);
