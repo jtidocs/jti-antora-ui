@@ -671,7 +671,7 @@
   padding: 0.1rem 0.5rem;
   border-radius: var(--border-radius-large);
   color: var(--color-white);
-  text-shadow: 2px 2px var(--doc-font-color);
+  text-shadow: 0 0 3px var(--doc-font-color);
   font-style: normal;
 }
 

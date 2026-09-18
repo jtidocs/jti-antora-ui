@@ -157,7 +157,7 @@
 
 .cards.flex.products .sidebarblock.card.ecourt .title {
   background-color: var(--color-jti-ecourt);
-  text-shadow: 2px 2px var(--doc-font-color);
+  text-shadow: 0 0 3px var(--doc-font-color);
 }
 
 .cards.flex.products .sidebarblock.card.edefender .title {
