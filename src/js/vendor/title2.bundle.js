@@ -2,9 +2,10 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const imageObjects = document.querySelectorAll('.doc .imageblock object')
+  var title, table
   for (const b of imageObjects) {
     var altnode = b.querySelector('.alt')
-    var title = 'An image'
+    title = 'An image'
     if (altnode) {
       title = altnode.innerHTML.toString()
     }
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var iframe = b.querySelector('iframe')
     if (iframe) {
       var blocktitle = b.querySelector('.title')
-      var title = 'A video'
+      title = 'A video'
       if (blocktitle) {
         title = blocktitle.innerHTML.toString()
       }
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const listBlocks = document.querySelectorAll('.doc .colist, .doc .hdlist')
   for (const b of listBlocks) {
-    var table = b.querySelector('table')
+    table = b.querySelector('table')
     if (table) {
       table.setAttribute('role', 'presentation')
     }
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const admonBlocks = document.querySelectorAll('.doc .admonitionblock')
   for (const b of admonBlocks) {
-    var table = b.querySelector('table')
+    table = b.querySelector('table')
     if (table) {
       table.setAttribute('role', 'presentation')
     }
