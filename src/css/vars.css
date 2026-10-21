@@ -14,7 +14,7 @@ body {
   --color-gray-70: #5d5d5d;
   --color-black: #000;
 
-  /* JTI Colors */
+  /* JTI Color palette */
   --color-jti-glacier: #f4f4f2; /* off-white */
   --color-jti-silver: #8f9194; /* medium grey */
   --color-jti-dark-silver: #3f3b3c; /* dark grey */
@@ -27,17 +27,32 @@ body {
   --color-jti-ruby: #d920a2; /* pink */
   --color-jti-breaking: #ff6262; /* For Breaking Changes in the release notes */
 
+  /* Tweaked variants for Title II */
+  --color-jti-jade-tweak: #49bc94;
+  --color-jti-royal-tweak: #2d4d92;
+  --color-jti-triumph-tweak: #2673ba;
+  --color-jti-plum-tweak: #811191;
+
   /* JTI product colors */
-  --color-jti-eattorney: #2d4d92;
-  --color-jti-ecourt: #49bc94;
-  --color-jti-edefender: #d91ea0;
-  --color-jti-eprosecutor: #2673ba;
-  --color-jti-esupervision: #811191;
+  --color-jti-eattorney: var(--color-jti-royal-tweak);
+  --color-jti-ecourt: var(--color-jti-jade-tweak);
+  --color-jti-edefender: var(--color-jti-ruby);
+  --color-jti-eprosecutor: var(--color-jti-triumph-tweak);
+  --color-jti-esupervision: var(--color-jti-plum-tweak);
 
   /* JTI role colors */
-  --color-jti-user: #49bc94;
-  --color-jti-business: #811191;
-  --color-jti-admin: #2673ba;
+  --color-jti-user: var(--color-jti-jade-tweak);
+  --color-jti-business: var(--color-jti-plum-tweak);
+  --color-jti-admin: var(--color-jti-triumph-tweak);
+
+  /* Config guide topic grouping colors */
+  --color-jti-config-automation: var(--color-jti-royal-tweak);
+  --color-jti-config-case: var(--color-jti-triumph-tweak);
+  --color-jti-config-documents: var(--color-jti-ruby);
+  --color-jti-config-financial: var(--color-jti-dark-silver);
+  --color-jti-config-screen: var(--color-jti-jade-tweak);
+  --color-jti-config-security: var(--color-jti-silver);
+  --color-jti-config-system: var(--color-jti-plum-tweak);
 
   /* fonts */
   --rem-base: 16; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */

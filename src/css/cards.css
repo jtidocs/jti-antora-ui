@@ -184,6 +184,34 @@
   background-color: var(--color-jti-admin);
 }
 
+.cards.flex .sidebarblock.card.config-automation .title {
+  background-color: var(--color-jti-config-automation);
+}
+
+.cards.flex .sidebarblock.card.config-case .title {
+  background-color: var(--color-jti-config-case);
+}
+
+.cards.flex .sidebarblock.card.config-documents .title {
+  background-color: var(--color-jti-config-documents);
+}
+
+.cards.flex .sidebarblock.card.config-financial .title {
+  background-color: var(--color-jti-config-financial);
+}
+
+.cards.flex .sidebarblock.card.config-screen .title {
+  background-color: var(--color-jti-config-screen);
+}
+
+.cards.flex .sidebarblock.card.config-security .title {
+  background-color: var(--color-jti-config-security);
+}
+
+.cards.flex .sidebarblock.card.config-system .title {
+  background-color: var(--color-jti-config-system);
+}
+
 .cards.flex .sidebarblock.card .paragraph {
   padding: 0.75rem 1.5rem;
 }
