@@ -99,6 +99,10 @@
   flex-wrap: wrap;
 }
 
+.cards.flex.wide {
+  width: 100%;
+}
+
 @media all and (min-width: 768px) {
   .cards.flex.flex-4 .sidebarblock.card { width: 23%; }
   .cards.flex.flex-3 .sidebarblock.card { width: 32%; }
