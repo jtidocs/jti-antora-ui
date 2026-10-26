@@ -3,7 +3,8 @@
   border-radius: var(--border-radius-large);
 }
 
-.doc .cards > .content {
+.doc .cards > .content,
+.doc .boxes > .content {
   padding: 0 1rem 1rem;
   display: flex;
   flex-flow: row wrap;
@@ -22,7 +23,18 @@
   transition: all 0.15s ease;
 }
 
-.doc .sidebarblock.card > .content {
+.doc .sidebarblock.box {
+  display: flex;
+  background-color: transparent;
+  width: 33%;
+  flex-grow: 1;
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+  transition: all 0.15s ease;
+}
+
+.doc .sidebarblock.card > .content,
+.doc .sidebarblock.box > .content {
   position: relative;
 }
 
@@ -30,7 +42,8 @@
   padding-left: 4rem;
 }
 
-.doc .sidebarblock.card > .content > .ulist {
+.doc .sidebarblock.card > .content > .ulist,
+.doc .sidebarblock.box > .content > .ulist {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -58,7 +71,8 @@
   display: inline-block;
 }
 
-.doc .sidebarblock.card.wide {
+.doc .sidebarblock.card.wide,
+.doc .sidebarblock.box.wide {
   width: 100%;
 }
 
@@ -78,7 +92,8 @@
 
 @media screen and (max-width: 768px),
   screen and (min-width: 1024px) and (max-width: 1120px) {
-  .doc .sidebarblock.card {
+  .doc .sidebarblock.card,
+  .doc .sidebarblock.box {
     width: 100%;
   }
 }
@@ -89,7 +104,10 @@
 
 .cards.flex,
 .cards.flex .sidebarblock,
-.cards.flex .content {
+.cards.flex .content,
+.boxes.flex,
+.boxes.flex .sidebarblock,
+.boxes.flex .content {
   padding: 0;
 }
 
@@ -99,7 +117,8 @@
   flex-wrap: wrap;
 }
 
-.cards.flex.wide {
+.cards.flex.wide,
+.boxes.flex.wide {
   width: 100%;
 }
 
@@ -107,32 +126,44 @@
   .cards.flex.flex-4 .sidebarblock.card { width: 23%; }
   .cards.flex.flex-3 .sidebarblock.card { width: 32%; }
   .cards.flex.flex-2 .sidebarblock.card { width: 48%; }
+  .boxes.flex.flex-4 .sidebarblock.card { width: 23%; }
+  .boxes.flex.flex-3 .sidebarblock.card { width: 32%; }
+  .boxes.flex.flex-2 .sidebarblock.card { width: 48%; }
 }
 
 @media all and (max-width: 767px) {
   .cards.flex.flex-2 .sidebarblock.card,
   .cards.flex.flex-3 .sidebarblock.card,
-  .cards.flex.flex-4 .sidebarblock.card {
+  .cards.flex.flex-4 .sidebarblock.card,
+  .boxes.flex.flex-2 .sidebarblock.card,
+  .boxes.flex.flex-3 .sidebarblock.card,
+  .boxes.flex.flex-4 .sidebarblock.card {
     width: 100%;
   }
 
   .cards.flex.flex-2 .sidebarblock.card:last-child,
   .cards.flex.flex-3 .sidebarblock.card:last-child,
-  .cards.flex.flex-4 .sidebarblock.card:last-child {
+  .cards.flex.flex-4 .sidebarblock.card:last-child,
+  .boxes.flex.flex-2 .sidebarblock.card:last-child,
+  .boxes.flex.flex-3 .sidebarblock.card:last-child,
+  .boxes.flex.flex-4 .sidebarblock.card:last-child {
     margin-bottom: 0;
   }
 }
 
-.cards.flex .content {
+.cards.flex .content,
+.boxes.flex .content {
   column-gap: 0;
 }
 
-.cards.flex .sidebarblock.card {
+.cards.flex .sidebarblock.card,
+.boxes.flex .sidebarblock.box {
   flex-grow: 0;
   hyphens: none;
 }
 
-.cards.flex .sidebarblock.card .content {
+.cards.flex .sidebarblock.card .content,
+.boxes.flex .sidebarblock.box .content {
   display: block;
   width: 100%;
 }
@@ -216,6 +247,7 @@
   background-color: var(--color-jti-config-system);
 }
 
-.cards.flex .sidebarblock.card .paragraph {
+.cards.flex .sidebarblock.card .paragraph,
+.boxes.flex .sidebarblock.box .paragraph {
   padding: 0.75rem 1.5rem;
 }

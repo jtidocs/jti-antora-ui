@@ -1089,6 +1089,21 @@ A cloud-hosted version of eProsecutor, designed for smaller to mid-sized prosecu
 ****
 --
 
+[.boxes.flex.flex-3]
+--
+[.box]
+****
+* Some
+* Links
+****
+
+[.box]
+****
+* with
+* no frame
+****
+--
+
 [.cards.flex.products]
 --
 [.card.config-system.wide]
@@ -1099,6 +1114,27 @@ A cloud-hosted version of eProsecutor, designed for smaller to mid-sized prosecu
 * Link 3
 ****
 --
+
+
+[cols="a,a,a"]
+|===
+| Product guides
+2+| User guides
+
+|
+* Foo
+* Bar
+* Baz
+
+|
+* Some
+* Links
+
+|
+* with
+* no frame
+
+|===
 
 
 === Issues
