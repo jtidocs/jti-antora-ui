@@ -253,11 +253,9 @@
 }
 
 .ulist.grid ul {
-  column-width: 13rem;   /* minimum column width; columns drop as the container narrows */
+  column-width: 16rem;   /* minimum column width; columns drop as the container narrows */
   column-count: 5;
   column-gap: 2em;
-  margin: 1em;
-  padding: 0;
 }
 
 .ulist.grid ul > li {
