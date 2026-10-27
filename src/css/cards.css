@@ -252,10 +252,9 @@
   padding: 0.75rem 1.5rem;
 }
 
-
 .grid {
   display: grid;
-  grid-template-columms: repeat(auto-fit, minmax(0cm, max-content));
+  grid-template-columns: (auto-fit, minmax(0, max-content));
   /* grid-template-rows: repeat(5, 1ft); */
   grid-auto-flow: column;
 }
