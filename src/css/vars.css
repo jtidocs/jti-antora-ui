@@ -54,6 +54,9 @@ body {
   --color-jti-config-security: var(--color-jti-silver);
   --color-jti-config-system: var(--color-jti-plum-tweak);
 
+  --color-jti-featured-bg: var(--color-jti-royal);
+  --color-jti-featured: var(--color-white);
+
   /* fonts */
   --rem-base: 16; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
   --body-font-size: 1em; /* 17px */
