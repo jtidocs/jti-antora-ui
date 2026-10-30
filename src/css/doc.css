@@ -170,19 +170,6 @@
   font-style: normal;
 }
 
-a[href]:not(
-[href^="#"],
-[href^="javascript:" i],
-[href^="/"]:not([href^="//"]),
-[href*="//127.0.0.1"],
-[href*="//localhost"],
-[href*="//journaltech.com"],
-[href*="//staffdocs.journaltech.com"],
-[href*="//docs.journaltech.com"]
-)::after {
-  content: "\2934\FE0E";
-}
-
 .doc p code,
 .doc thead code,
 .doc .colist > table code {
