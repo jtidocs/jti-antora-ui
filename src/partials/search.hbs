@@ -1,3 +1,4 @@
+{{#if (not page.attributes.pfsixteen)}}
 <div id="search" class="navbar-item hide-for-print">
   <div class="content">
     <button aria-label="Search" class="q"><svg aria-hidden="true" height="12" width="12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M12.6 11.2c.037.028.073.059.107.093l3 3a1 1 0 1 1-1.414 1.414l-3-3a1.009 1.009 0 0 1-.093-.107 7 7 0 1 1 1.4-1.4zM7 12A5 5 0 1 0 7 2a5 5 0 0 0 0 10z"></path></svg></button>
@@ -8,3 +9,63 @@
     <button name="clear search field" aria-keyshortcuts="Escape" class="x"><span class="keyseq"><kbd>esc</kbd></span></button>
   </div>
 </div>
+{{else}}
+<div class="navbar-item hide-for-print">
+  <pagefind-modal-trigger></pagefind-modal-trigger>
+  <pagefind-modal>
+    <pagefind-modal-header>
+      <pagefind-input></pagefind-input>
+      <pagefind-filter-dropdown filter="component"></pagefind-filter-dropdown>
+    </pagefind-modal-header>
+    <pagefind-modal-body>
+      <pagefind-summary
+        default-message="Enter some characters to begin searching..."
+      ></pagefind-summary>
+      <pagefind-results
+        hide-sub-results="true"
+      >
+        <script type="text/pagefind-template">
+          <li class="pf-result">
+            <div class="pf-result-card">
+              \{{#if and(options.show_images, meta.image)}}
+                <img class="pf-result-image" src="\{{ meta.image | resolveUrl(meta.url | default(url)) }}" alt="\{{ meta.image_alt | default(meta.title) }}">
+              \{{/if}}
+              <div class="pf-result-content">
+                <p class="pf-result-title">
+                  <a class="pf-result-link" href="\{{ meta.url | default(url) | safeUrl }}"\{{#if options.link_target}} target="\{{ options.link_target }}"\{{/if}}\{{#if eq(options.link_target, "_blank")}} rel="noopener"\{{/if}}>\{{ meta.title }}</a>
+                </p>
+                <p class="pf-result-excerpt">\{{+ excerpt +}}</p>
+                <p class="pf-result-breadcrumb">\{{+ meta.breadcrumb +}}</p>
+              </div>
+            </div>
+            \{{#if sub_results}}
+              <ul class="pf-heading-chips">
+                \{{#each sub_results as sub}}
+                  <li class="pf-heading-chip">
+                    <a class="pf-heading-link" href="\{{ sub.url | safeUrl }}"\{{#if options.link_target}} target="\{{ options.link_target }}"\{{/if}}\{{#if eq(options.link_target, "_blank")}} rel="noopener"\{{/if}}>\{{ sub.title }}</a>
+                    <p class="pf-heading-excerpt">\{{+ sub.excerpt +}}</p>
+                  </li>
+                \{{/each}}
+              </ul>
+            \{{/if}}
+          </li>
+        </script>
+        <script type="text/pagefind-template" data-template="placeholder">
+          <li class="pf-result" aria-hidden="true">
+            <div class="pf-result-card">
+              <div class="pf-skeleton pf-skeleton-image"></div>
+              <div class="pf-result-content">
+                <p class="pf-result-title pf-skeleton pf-skeleton-title"></p>
+                <p class="pf-result-excerpt pf-skeleton pf-skeleton-excerpt"></p>
+              </div>
+            </div>
+          </li>
+        </script>
+      </pagefind-results>
+    </pagefind-modal-body>
+    <pagefind-modal-footer>
+      <pagefind-keyboard-hints></pagefind-keyboard-hints>
+    </pagefind-modal-footer>
+  </pagefind-modal>
+</div>
+{{/if}}

@@ -1,6 +1,23 @@
 {{> footer-check_dark_mode }}
+{{#if page.attributes.pfsixteen}}
+<link href="{{{siteRootPath}}}/pagefind/pagefind-component-ui.css" rel="stylesheet">
+<script src="{{{siteRootPath}}}/pagefind/pagefind-component-ui.js" type="module"></script>
+<style>
+  /* Add a custom Pagefind style */
+  :is(*, #\#):is(*, #\#):is(*, #\#) .pf-result-breadcrumb {
+      font-size: var(--search-breadcrumb-size);
+      color: var(--search-breadcrumb-color);
+      margin: 4px 0 0 0;
+      line-height: 1.5;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+</style>
+{{else}}
 <link href="{{{siteRootPath}}}/pagefind/pagefind-modular-ui.css" rel="stylesheet">
 <script src="{{{siteRootPath}}}/pagefind/pagefind-modular-ui.js" type="text/javascript"></script>
+{{/if}}
 <script id="site-script" src="{{{uiRootPath}}}/js/site.js" data-ui-root-path="{{{uiRootPath}}}"></script>
 <script async src="{{{uiRootPath}}}/js/vendor/prism.js"></script>
 <script async src="{{{uiRootPath}}}/js/vendor/medium-zoom.js"></script>
