@@ -34,9 +34,11 @@
     if (isDark === dark) {
       body.classList.add(modeClass)
       toggle.setAttribute('aria-label', 'Switch to light mode.')
+      body.setAttribute('data-pf-theme', 'dark')
     } else {
       body.classList.remove(modeClass)
       toggle.setAttribute('aria-label', 'Switch to dark mode.')
+      body.removeAttribute('data-pf-theme')
     }
     window.localStorage.setItem(preferenceName, isDark)
   }
