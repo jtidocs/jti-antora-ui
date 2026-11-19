@@ -193,6 +193,7 @@ body {
   --search-result-highlight-bg: var(--color-jti-glacier);
   --search-result-highlight-sh: rgba(0, 0, 0, 0.2);
   --search-breadcrumb-color: var(--color-jti-silver);
+  --search-breadcrumb-size: 11px;
   --search-pill-bg: var(--color-jti-triumph);
   --search-pill-border: var(--color-jti-triumph);
 
